@@ -55,17 +55,17 @@ module.exports = {
         ephemeral: true,
       });
     }
-
+    
     let player;
-
+    
     const PlayerGuild = await playerGuild(interaction.guild.id);
-
-    if (guildData.economyType) {
-      player = await PlayerGuild.findOne({ userId: targetUser.id });
+      
+    if(guildData.economyType) {
+        player = await PlayerGuild.findOne({ userId: targetUser.id });
     } else {
-      player = await Player.findOne({ userId: targetUser.id });
+        player = await Player.findOne({ userId: targetUser.id });
     }
-
+      
     if (!player) {
       return interaction.editReply({
         embeds: [
@@ -84,10 +84,10 @@ module.exports = {
       });
     }
 
-    if (guildData.economyType) {
-      await PlayerGuild.deleteOne({ userId: targetUser.id });
+    if(guildData.economyType) {
+        await PlayerGuild.deleteOne({ userId: targetUser.id });
     } else {
-      await Player.deleteOne({ userId: targetUser.id });
+        await Player.deleteOne({ userId: targetUser.id });
     }
 
     return interaction.editReply({

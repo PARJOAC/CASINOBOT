@@ -1,4 +1,5 @@
 {
+  "onlyGuildOwner": "{owner} のみがこのコマンドを実行する権限を持っています。",
   "onlyCreatorBotGlobal": "このコマンドは、ローカル モードのエコノミーでのみ実行できます。",
   "local": "ローカル",
   "global": "グローバル",

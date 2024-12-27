@@ -1,6 +1,6 @@
 const { SlashCommandBuilder, PermissionFlagsBits } = require("discord.js");
-const Player = require("../../../mongoDB/Player");
 const Guild = require("../../../mongoDB/Guild");
+const { getDataUser } = require("../../functions/getDataUser");
 const { interactionEmbed } = require("../../functions/interactionEmbed");
 const { getSetUser } = require("../../functions/getSet");
 
@@ -77,8 +77,8 @@ module.exports = {
       });
     }
 
-    let playerData = await getDataUser(user.id, interaction.guild.id);
-
+    let playerData = await getDataUser(targetUser.id, interaction.guild.id);
+      
     if (!playerData) {
       return interaction.editReply({
         embeds: [

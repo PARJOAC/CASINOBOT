@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-async function infoSchema(){
-    return {
+function createInfoSchema() {
+    return new mongoose.Schema({
         userId: { type: String, required: true, unique: true },
         balance: { type: Number, default: 20000 },
         level: { type: Number, default: 1 },
@@ -26,9 +26,7 @@ async function infoSchema(){
         lastVote: { type: Number, default: 0 },
         lastCrime: { type: Number, default: 0 },
         votes: { type: Number, default: 1 },
-    }
+    });
 }
 
-module.exports = {
-    infoSchema
-}
+module.exports = { createInfoSchema };

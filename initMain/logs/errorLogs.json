@@ -1,20 +1,44 @@
 [
   {
     "type": "unhandledRejection",
-    "timestamp": "27/12/2024, 1:26:32",
-    "message": "GuildPlayer.findOne is not a function",
-    "stack": "TypeError: GuildPlayer.findOne is not a function\n    at Object.execute (/home/container/bot/commands/admin/deleteuser.js:62:36)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    "timestamp": "27/12/2024, 4:24:38",
+    "message": "Unknown Message",
+    "stack": "DiscordAPIError[10008]: Unknown Message\n    at handleErrors (/home/container/node_modules/@discordjs/rest/dist/index.js:727:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async SequentialHandler.runRequest (/home/container/node_modules/@discordjs/rest/dist/index.js:1128:23)\n    at async SequentialHandler.queueRequest (/home/container/node_modules/@discordjs/rest/dist/index.js:959:14)\n    at async _REST.request (/home/container/node_modules/@discordjs/rest/dist/index.js:1272:22)\n    at async GuildMessageManager.edit (/home/container/node_modules/discord.js/src/managers/MessageManager.js:188:15)"
+  },
+  {
+    "type": "uncaughtException",
+    "timestamp": "27/12/2024, 8:29:12",
+    "message": "Unknown Guild",
+    "stack": "DiscordAPIError[10004]: Unknown Guild\n    at handleErrors (/home/container/node_modules/@discordjs/rest/dist/index.js:727:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async SequentialHandler.runRequest (/home/container/node_modules/@discordjs/rest/dist/index.js:1128:23)\n    at async SequentialHandler.queueRequest (/home/container/node_modules/@discordjs/rest/dist/index.js:959:14)\n    at async _REST.request (/home/container/node_modules/@discordjs/rest/dist/index.js:1272:22)\n    at async GuildMemberManager._fetchSingle (/home/container/node_modules/discord.js/src/managers/GuildMemberManager.js:222:18)\n    at async Guild.fetchOwner (/home/container/node_modules/discord.js/src/structures/Guild.js:503:20)\n    at async Object.execute (/home/container/bot/events/guildCreate.js:20:43)"
   },
   {
     "type": "unhandledRejection",
-    "timestamp": "27/12/2024, 1:27:34",
-    "message": "GuildPlayer.findOne is not a function",
-    "stack": "TypeError: GuildPlayer.findOne is not a function\n    at Object.execute (/home/container/bot/commands/admin/deleteuser.js:62:36)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    "timestamp": "27/12/2024, 14:01:39",
+    "message": "getDataUser is not defined",
+    "stack": "ReferenceError: getDataUser is not defined\n    at Object.execute (/home/container/bot/commands/admin/removemoney.js:80:22)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
   },
   {
     "type": "unhandledRejection",
-    "timestamp": "27/12/2024, 1:48:59",
-    "message": "guildId is not defined",
-    "stack": "ReferenceError: guildId is not defined\n    at Object.execute (/home/container/bot/commands/users/top.js:52:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    "timestamp": "27/12/2024, 14:02:30",
+    "message": "getDataUser is not defined",
+    "stack": "ReferenceError: getDataUser is not defined\n    at Object.execute (/home/container/bot/commands/admin/removemoney.js:80:22)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "unhandledRejection",
+    "timestamp": "27/12/2024, 14:13:12",
+    "message": "Invalid schema configuration: `InfoSchema` is not a valid type at path `infoSchema`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.",
+    "stack": "TypeError: Invalid schema configuration: `InfoSchema` is not a valid type at path `infoSchema`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.\n    at Schema.interpretAsType (/home/container/node_modules/mongoose/lib/schema.js:1531:11)\n    at Schema.path (/home/container/node_modules/mongoose/lib/schema.js:1118:27)\n    at Schema.add (/home/container/node_modules/mongoose/lib/schema.js:760:12)\n    at new Schema (/home/container/node_modules/mongoose/lib/schema.js:143:10)\n    at Object.<anonymous> (/home/container/mongoDB/Player.js:4:22)\n    at Module._compile (node:internal/modules/cjs/loader:1368:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1426:10)\n    at Module.load (node:internal/modules/cjs/loader:1205:32)\n    at Module._load (node:internal/modules/cjs/loader:1021:12)\n    at Module.require (node:internal/modules/cjs/loader:1230:19)"
+  },
+  {
+    "type": "unhandledRejection",
+    "timestamp": "27/12/2024, 14:33:27",
+    "message": "Cannot read properties of null (reading 'name')",
+    "stack": "TypeError: Cannot read properties of null (reading 'name')\n    at logEmbedLose (/home/container/bot/functions/logEmbeds.js:43:117)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "unhandledRejection",
+    "timestamp": "27/12/2024, 14:33:28",
+    "message": "Invalid Webhook Token",
+    "stack": "DiscordAPIError[50027]: Invalid Webhook Token\n    at handleErrors (/home/container/node_modules/@discordjs/rest/dist/index.js:727:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async SequentialHandler.runRequest (/home/container/node_modules/@discordjs/rest/dist/index.js:1128:23)\n    at async SequentialHandler.queueRequest (/home/container/node_modules/@discordjs/rest/dist/index.js:959:14)\n    at async _REST.request (/home/container/node_modules/@discordjs/rest/dist/index.js:1272:22)\n    at async InteractionWebhook.editMessage (/home/container/node_modules/discord.js/src/structures/Webhook.js:341:15)\n    at async ButtonInteraction.editReply (/home/container/node_modules/discord.js/src/structures/interfaces/InteractionResponses.js:162:17)"
   }
 ]

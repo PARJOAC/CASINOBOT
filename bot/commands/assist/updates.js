@@ -12,7 +12,7 @@ module.exports = {
         return interaction.editReply({
             embeds: [
                 await interactionEmbed({
-                    title: "Version 2.2 released! 24/12/2024 (DD/MM/YYYY)",
+                    title: "Version 2.1 released! 24/12/2024 (DD/MM/YYYY)",
                     description: `Thank you for gambling with <@${client.user.id}>!\nThis version includes the following:\n`,
                     color: 0x3498db,
                     footer: "CasinoBot",
@@ -30,7 +30,7 @@ module.exports = {
                         },
                         {
                             name: "🆕 New Commands",
-                            value: "- Command to do crime added /crime.\n- Command to change economy type added /seteconomy.\n- Admin Command added on local economy /addmoney, /removemoney and /deleteuser, you can't use on global economy.",
+                            value: "- /crime command added.\n- /seteconomy added.",
                             inline: false,
                         },
                         {

@@ -1,4 +1,5 @@
 {
+  "onlyGuildOwner": "Only {owner} has permission to do this command.",
   "onlyCreatorBotGlobal": "You can only run this command with the economy in local mode.",
   "local": "local",
   "global": "global",
@@ -25,7 +26,7 @@
   "dmDisabled": "The user has DM disabled and has not received the message.",
   "waiting": "Making extraordinary calculations!",
   "errorTitle": "❌ Error",
-  "onlyCreatorBot": "Only the Bot Creator has permission to do this command",
+  "onlyCreatorBot": "Only the Bot Creator has permission to do this command.",
   "minimumBet": "Amount must be greater than 100.",
   "succesfulAddMoneyTitle": "💸 Money Added!",
   "succesfulAddMoneyContent": "{amount} <:blackToken:1304186797064065065> has been added to {user}'s balance.",

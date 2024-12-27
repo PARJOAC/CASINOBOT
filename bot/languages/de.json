@@ -1,4 +1,5 @@
 {
+  "onlyGuildOwner": "Nur {owner} hat die Berechtigung, diesen Befehl auszuführen.",
   "onlyCreatorBotGlobal": "Sie können diesen Befehl nur mit der Economy im lokalen Modus ausführen.",
   "local": "Lokal",
   "global": "Global",

@@ -1,4 +1,5 @@
 {
+  "onlyGuildOwner": "Tylko {owner} ma uprawnienia do wykonania tej komendy.",
   "onlyCreatorBotGlobal": "Możesz uruchomić to polecenie tylko w trybie ekonomicznym w trybie lokalnym.",
   "local": "lokalny",
   "global": "globalny",

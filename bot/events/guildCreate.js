@@ -17,7 +17,7 @@ module.exports = {
             fields: [
               { name: "Server Name", value: guild.name, inline: true },
               { name: "Server ID", value: guild.id, inline: true },
-              { name: "Owner ID", value: (await guild.fetchOwner()).user.id, inline: true },
+              { name: "Owner ID", value: guild.ownerId || "Unknown", inline: true },
               { name: "Member Count", value: `${guild.memberCount}`, inline: true },
               { name: "Created On", value: `<t:${Math.floor(guild.createdTimestamp / 1000)}:F>`, inline: true },
               { name: "Verification Level", value: guild.verificationLevel.toString(), inline: true },
