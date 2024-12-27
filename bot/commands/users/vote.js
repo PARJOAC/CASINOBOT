@@ -1,9 +1,10 @@
 const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require("discord.js");
 const axios = require("axios");
-const Player = require("../../../mongoDB/Player");
+const { getDataUser } = require("../../functions/getDataUser");
 const { logEmbedVotes } = require("../../functions/logEmbeds");
 const { interactionEmbed } = require("../../functions/interactionEmbed");
 const { addSet, delSet, getSet } = require("../../functions/getSet");
+
 const executingUsers = new Set();
 
 module.exports = {
@@ -141,7 +142,7 @@ module.exports = {
         });
 
         if (response.data.voted === 1) {
-          const rewards = await grantRandomReward(userID, lang);
+          const rewards = await grantRandomReward(interaction, userID, lang);
           playerData.lastVote = currentTime;
           await playerData.save();
 
@@ -187,8 +188,8 @@ module.exports = {
   },
 };
 
-async function grantRandomReward(userID, lang) {
-  const playerData = await Player.findOne({ userId: userID });
+async function grantRandomReward(interaction, userID, lang) {
+  let playerData = await getDataUser(userID, interaction.guild.id);
   const rewardType = Math.floor(Math.random() * 3);
   let message = "";
 
