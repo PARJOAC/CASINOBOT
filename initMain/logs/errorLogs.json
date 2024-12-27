@@ -1,0 +1,20 @@
+[
+  {
+    "type": "unhandledRejection",
+    "timestamp": "27/12/2024, 1:26:32",
+    "message": "GuildPlayer.findOne is not a function",
+    "stack": "TypeError: GuildPlayer.findOne is not a function\n    at Object.execute (/home/container/bot/commands/admin/deleteuser.js:62:36)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "unhandledRejection",
+    "timestamp": "27/12/2024, 1:27:34",
+    "message": "GuildPlayer.findOne is not a function",
+    "stack": "TypeError: GuildPlayer.findOne is not a function\n    at Object.execute (/home/container/bot/commands/admin/deleteuser.js:62:36)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "unhandledRejection",
+    "timestamp": "27/12/2024, 1:48:59",
+    "message": "guildId is not defined",
+    "stack": "ReferenceError: guildId is not defined\n    at Object.execute (/home/container/bot/commands/users/top.js:52:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  }
+]
