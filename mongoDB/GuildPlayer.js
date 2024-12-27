@@ -1,19 +1,32 @@
 const mongoose = require("mongoose");
-const { infoSchema } = require("./info");
 
-async function playerGuild(guildId) {
-    const modelName = `PlayerGuild_${guildId}`;
-
-    if (mongoose.models[modelName]) {
-        return mongoose.models[modelName];
-    }
-
-    const PlayerGuildSchema = new mongoose.Schema({
-        infoSchema
+function createInfoSchema() {
+    return new mongoose.Schema({
+        userId: { type: String, required: true, unique: true },
+        balance: { type: Number, default: 20000 },
+        level: { type: Number, default: 1 },
+        experience: { type: Number, default: 0 },
+        maxBet: { type: Number, default: 0 },
+        swag: {
+            balloons: { type: Number, default: 0 },
+            mobile: { type: Number, default: 0 },
+        },
+        lastWork: { type: Number, default: 0 },
+        lastDaily: { type: Number, default: 0 },
+        lastWeekly: { type: Number, default: 0 },
+        lastBlackJack: { type: Number, default: 0 },
+        lastCoinFlip: { type: Number, default: 0 },
+        lastCrash: { type: Number, default: 0 },
+        lastMinesweeper: { type: Number, default: 0 },
+        lastRace: { type: Number, default: 0 },
+        lastRoulette: { type: Number, default: 0 },
+        lastRps: { type: Number, default: 0 },
+        lastRussianRoulette: { type: Number, default: 0 },
+        lastSlot: { type: Number, default: 0 },
+        lastVote: { type: Number, default: 0 },
+        lastCrime: { type: Number, default: 0 },
+        votes: { type: Number, default: 1 },
     });
-
-    const PlayerGuild = mongoose.model(modelName, PlayerGuildSchema);
-    return PlayerGuild;
 }
 
-module.exports = playerGuild;
+module.exports = { createInfoSchema };

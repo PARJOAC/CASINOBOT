@@ -1,3 +1,5 @@
+const mongoose = require("mongoose");
+
 async function infoSchema(){
     return {
         userId: { type: String, required: true, unique: true },
