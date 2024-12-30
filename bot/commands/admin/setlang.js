@@ -23,7 +23,8 @@ module.exports = {
                     { name: "🇵🇱 Polish", value: "pl" },
                     { name: "🇵🇹 Portuguese", value: "pt" },
                     { name: "🇷🇺 Russian", value: "ru" },
-                    { name: "🇯🇵 Japanese", value: "ja" }
+                    { name: "🇯🇵 Japanese", value: "ja" },
+                    { name: "🇬🇷 Greek", value: "el" }
                 )
         )
         .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
@@ -63,7 +64,10 @@ module.exports = {
                                                                 ? "🇮🇳 Hindi"
                                                                 : selectLang == "ja"
                                                                     ? "🇯🇵 日本語"
-                                                                    : "🇸🇦 Arabic"
+                                                                    : selectLang == "el"
+                                                                        ? "🇬🇷 Ελληνικά"
+                                                                        : "🇸🇦 Arabic"
+
                     ),
                     color: 0x00ff00,
                     footer: "CasinoBot",

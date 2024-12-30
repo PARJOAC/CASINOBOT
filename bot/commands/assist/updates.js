@@ -29,8 +29,8 @@ module.exports = {
                             inline: false,
                         },
                         {
-                            name: "🆕 New Commands",
-                            value: "- /crime command added.\n- /seteconomy added.",
+                            name: "🆕 New",
+                            value: "- /crime command added.\n- /seteconomy added.\n- Greek Language added.",
                             inline: false,
                         },
                         {
