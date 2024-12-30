@@ -39,7 +39,6 @@ module.exports = {
 
         const fecha = new Date();
         playerData.lastCoinFlip = fecha;
-        await playerData.save();
 
         let coinFlipResult = Math.random() < 0.5 ? "head" : "tail";
 

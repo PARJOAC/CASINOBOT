@@ -87,6 +87,9 @@ module.exports = {
 
     betAmount = initGames.betAmount;
 
+    const fecha = new Date();
+    playerData.lastBlackJack = fecha;
+
     const playerCards = [drawCard(), drawCard()];
     const dealerCards = [drawCard(), drawCard()];
 

@@ -37,7 +37,6 @@ module.exports = {
 
         const fecha = new Date();
         playerData.lastRussianRoulette = fecha;
-        await playerData.save();
 
         const generateButtons = () => new ActionRowBuilder().addComponents(
             new ButtonBuilder().setCustomId("shoot").setLabel(lang.shootButton).setStyle(ButtonStyle.Danger),

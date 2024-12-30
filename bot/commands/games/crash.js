@@ -33,7 +33,6 @@ module.exports = {
 
     const fecha = new Date();
     playerData.lastCrash = fecha;
-    await playerData.save();
 
     let multiplier = 0.0;
     const crashTime = Math.random() * 10000 + 500;

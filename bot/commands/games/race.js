@@ -56,7 +56,6 @@ module.exports = {
 
     const fecha = new Date();
     playerData.lastRace = fecha;
-    await playerData.save();
 
     await interaction.editReply({
       content: `<@${interaction.user.id}>`,

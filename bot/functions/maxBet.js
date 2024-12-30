@@ -120,7 +120,7 @@ async function maxBet(playerData, betAmount, lang, interaction, client) {
       ephemeral: true,
     });
     return true;
-  } else if(playerData.level >= 75 && betAmount > 100000) {
+  } else if (playerData.level >= 75 && betAmount > 100000) {
     await interaction.editReply({
       content: `<@${interaction.user.id}>`,
       embeds: [

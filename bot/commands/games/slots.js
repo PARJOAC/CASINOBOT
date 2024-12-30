@@ -28,7 +28,6 @@ module.exports = {
 
     const fecha = new Date();
     playerData.lastSlot = fecha;
-    await playerData.save();
 
     const symbols = [
       "🍐",

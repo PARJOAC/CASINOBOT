@@ -34,7 +34,6 @@ module.exports = {
 
     const fecha = new Date();
     playerData.lastMinesweeper = fecha;
-    await playerData.save();
 
     let totalMultiplier = 1;
     let gameOver = false;
