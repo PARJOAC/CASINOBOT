@@ -4,7 +4,7 @@ async function winExperience(playerData, winnings) {
   experienceGained = Math.floor(Math.trunc(winnings) / 250);
   playerData.experience += experienceGained;
 
-  const xpNeeded = playerData.level * 500;
+  const xpNeeded = playerData.level * process.env.REQUIRED_XP;
   while (playerData.experience >= xpNeeded) {
     playerData.level += 1;
     playerData.experience -= xpNeeded;
@@ -16,14 +16,14 @@ async function winExperience(playerData, winnings) {
 }
 
 async function calculateProfile(playerData) {
-  const xpNeeded = playerData.level * 500;
+  const xpNeeded = playerData.level * process.env.REQUIRED_XP;
   while (playerData.experience >= xpNeeded) {
     playerData.level += 1;
     playerData.experience -= xpNeeded;
   }
   await playerData.save();
-  let xpNeededNew = playerData.level * 500;
-  const progressBarLength = 10;
+  let xpNeededNew = playerData.level * process.env.REQUIRED_XP;
+  const progressBarLength = 8;
   const filledLength = Math.floor(
     (playerData.experience / xpNeeded) * progressBarLength
   );

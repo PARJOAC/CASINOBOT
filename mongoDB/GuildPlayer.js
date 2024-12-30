@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { createInfoSchema } = require("./info");
+const { getInfoSchema } = require("../bot/functions/getInfoSchema");
 
 async function playerGuild(guildId) {
     const modelName = `PlayerGuild_${guildId}`;
@@ -8,7 +8,7 @@ async function playerGuild(guildId) {
         return mongoose.models[modelName];
     }
 
-    const PlayerGuildSchema = createInfoSchema();
+    const PlayerGuildSchema = getInfoSchema();
 
     const PlayerGuild = mongoose.model(modelName, PlayerGuildSchema);
     return PlayerGuild;

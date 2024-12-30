@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-const { createInfoSchema } = require("./info");
+const { getInfoSchema } = require("../bot/functions/getInfoSchema");
 
-const PlayerSchema = createInfoSchema();
+const PlayerSchema = getInfoSchema();
 
 const Player = mongoose.model("Player", PlayerSchema);
 module.exports = Player;

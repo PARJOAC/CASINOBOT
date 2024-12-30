@@ -1,10 +1,4 @@
-async function getCooldown(
-  playerData,
-  lang,
-  cooldowns,
-  interaction,
-  timeCooldown
-) {
+async function getCooldown(playerData, lang, cooldowns, interaction, timeCooldown) {
   const currentTime = Date.now();
   const user = await interaction.client.users.fetch(interaction.user.id);
   if (cooldowns[user.id] && currentTime < cooldowns[user.id]) {
