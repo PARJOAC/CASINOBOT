@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-function getInfo() {
+function getDefaultValues() {
     return {
         userId: { type: String, required: true, unique: true },
         balance: { type: Number, default: 20000 },
@@ -30,7 +30,25 @@ function getInfo() {
 }
 
 function getInfoSchema() {
-    return new mongoose.Schema(getInfo());
+    return new mongoose.Schema(getDefaultValues());
 }
 
-module.exports = { getInfoSchema, getInfo };
+function getDefaultInfo() {
+    const schemaDefinition = getDefaultValues();
+    const defaultInfo = {};
+
+    for (const [key, value] of Object.entries(schemaDefinition)) {
+        if (typeof value === "object" && value.default !== undefined) {
+            defaultInfo[key] = value.default;
+        } else if (typeof value === "object" && !value.default) {
+            defaultInfo[key] = {};
+            for (const [subKey, subValue] of Object.entries(value)) {
+                defaultInfo[key][subKey] = subValue.default;
+            }
+        }
+    }
+
+    return defaultInfo;
+}
+
+module.exports = { getInfoSchema, getDefaultInfo };

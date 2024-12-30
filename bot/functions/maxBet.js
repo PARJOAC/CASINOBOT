@@ -139,6 +139,10 @@ async function maxBet(playerData, betAmount, lang, interaction, client) {
     return true;
   }
 
+  if (playerData.maxBet < betAmount) {
+    playerData.maxBet = betAmount;
+  }
+
   return false;
 }
 
