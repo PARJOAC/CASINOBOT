@@ -10,8 +10,6 @@ async function winExperience(playerData, winnings) {
     playerData.experience -= xpNeeded;
   };
 
-  await playerData.save();
-
   return experienceGained;
 };
 

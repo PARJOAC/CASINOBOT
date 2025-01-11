@@ -22,8 +22,6 @@ async function initInfo(interaction, processChannel, client) {
 async function logEmbedWin(betAmount, playerData, won, interaction, client, lang) {
     const info = await initInfo(interaction, "LOG_GAMES_CHANNEL_ID", client, lang);
     await wonGame(playerData, won, interaction, lang, client);
-    //await wonItem(playerData, interaction, lang, client);
-    //await winExperience(playerData, won);
 
     greenEmbed(info.logChannel, client, {
         title: `${info.commandName} | Win 🎉`,
@@ -54,7 +52,7 @@ async function logEmbedLose(betAmount, playerData, interaction, client) {
 async function logEmbedTie(betAmount, playerData, interaction, client) {
     const info = await initInfo(interaction, "LOG_GAMES_CHANNEL_ID", client);
 
-    yellowEmbed(info.logChannel, client, {
+    return yellowEmbed(info.logChannel, client, {
         title: `${info.commandName} | Tie 🤝`,
         description: `**🧑 User:** ${info.user.username} (**${info.user.id}**)\n**🏠 Server:** ${info.guild.name} (**${info.guild.id
             }**)\n\n**💰 Bet Amount:** ${betAmount.toLocaleString()} <:blackToken:1304186797064065065>\n**🔖 Total Balance:** ${playerData.balance.toLocaleString()} <:blackToken:1304186797064065065>`,
@@ -66,7 +64,7 @@ async function logEmbedTie(betAmount, playerData, interaction, client) {
 async function logEmbedVotes(rewardVote, interaction, client) {
     const info = await initInfo(interaction, "LOG_VOTES_CHANNEL_ID", client);
 
-    blueEmbed(info.logChannel, client, {
+    return blueEmbed(info.logChannel, client, {
         title: `New Vote 🎉`,
         description: `**🧑 User:** ${info.user.username} (**${info.user.id}**)\n**🏠 Server:** ${info.guild.name} (**${info.guild.id}**)\n\n**🎁 Reward:** ${rewardVote}`,
         thumbnail: info.user.displayAvatarURL({ dynamic: true }),
@@ -79,7 +77,7 @@ async function logCommand(interaction, client) {
 
     const options = interaction.options.data.map(option => `${option.name}: ${option.value}`).join(" ");
 
-    blueEmbed(info.logChannel, client, {
+    return blueEmbed(info.logChannel, client, {
         title: `${info.commandName} | Command Executed 🔎`,
                 description: `**🧑 User:** ${info.user.username} (**${info.user.id}**)\n**🏠 Server:** ${info.guild.name} (**${info.guild.id}**)\n**📢 Channel:** ${info.channel.name} (**${info.channel.id}**)\n\n**📝 Executed Command:**\n\`\`\`/${info.commandName} ${options}\`\`\`\n`,
         thumbnail: info.user.displayAvatarURL({ dynamic: true }),

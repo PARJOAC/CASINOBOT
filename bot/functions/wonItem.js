@@ -8,8 +8,7 @@ async function wonItem(playerData, interaction, lang, client) {
     const randomIndex = Math.floor(Math.random() * items.length);
     const itemWon = items[randomIndex];
 
-    playerData.swag[itemWon] += (playerData.swag[itemWon] || 0) + 1;
-    await playerData.save();
+    playerData.swag[itemWon] += 1;
 
     const message = {
       balloons: lang.wonBalloon,
