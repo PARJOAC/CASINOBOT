@@ -23,9 +23,7 @@ async function logEmbedWin(betAmount, playerData, won, interaction, client, lang
     const info = await initInfo(interaction, "LOG_GAMES_CHANNEL_ID", client, lang);
     await wonGame(playerData, won, interaction, lang, client);
     //await wonItem(playerData, interaction, lang, client);
-    await winExperience(playerData, won);
-    
-    playerData.save();
+    //await winExperience(playerData, won);
 
     greenEmbed(info.logChannel, client, {
         title: `${info.commandName} | Win 🎉`,
