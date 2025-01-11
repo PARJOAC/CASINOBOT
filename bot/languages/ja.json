@@ -52,7 +52,7 @@
   "succesfulAddMoneyContent": "{amount} <:blackToken:1304186797064065065> が {user} の残高に追加されました。",
   "userNotFoundOnDataBase": "データベースにユーザー <@{user}> は見つかりませんでした。",
   "succesfulTitle": "✅ 成功",
-  "succesfulDeletedUserContent": "ユーザー <@{user}> はデータベースから正常に削除されました。",
+  "succesfulDeletedUserContent": "ユーザー <@{user}> は正常に削除されました。",
   "sameLang": "言語は既に設定されている言語と同じにできません。",
   "succesfulChangeLanguage": "言語は正常に {language} に変更されました。",
   "userCatchNotHaveAccount": "このユーザーはまだアカウントを持っていません！",

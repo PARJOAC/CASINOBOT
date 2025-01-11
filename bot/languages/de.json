@@ -52,7 +52,7 @@
   "succesfulAddMoneyContent": "{amount} <:blackToken:1304186797064065065> wurde dem Guthaben von {user} hinzugefügt.",
   "userNotFoundOnDataBase": "Benutzer <@{user}> in der Datenbank nicht gefunden.",
   "succesfulTitle": "✅ Erfolg",
-  "succesfulDeletedUserContent": "Benutzer <@{user}> wurde erfolgreich aus der Datenbank gelöscht.",
+  "succesfulDeletedUserContent": "Benutzer <@{user}> wurde erfolgreich gelöscht.",
   "sameLang": "Die Sprache kann nicht die gleiche sein wie die bereits eingestellte.",
   "succesfulChangeLanguage": "Die Sprache wurde erfolgreich auf {language} geändert.",
   "userCatchNotHaveAccount": "Dieser Benutzer hat noch kein Konto!",

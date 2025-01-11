@@ -52,7 +52,7 @@
   "succesfulAddMoneyContent": "{amount} <:blackToken:1304186797064065065> было добавлено к балансу {user}.",
   "userNotFoundOnDataBase": "Пользователь <@{user}> не найден в базе данных.",
   "succesfulTitle": "✅ Успех",
-  "succesfulDeletedUserContent": "Пользователь <@{user}> успешно удален из базы данных.",
+  "succesfulDeletedUserContent": "Пользователь <@{user}> был успешно удален.",
   "sameLang": "Язык не может быть таким же, как уже установлен.",
   "succesfulChangeLanguage": "Язык успешно изменен на {language}.",
   "userCatchNotHaveAccount": "У этого пользователя еще нет аккаунта!",

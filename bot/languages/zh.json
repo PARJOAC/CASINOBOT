@@ -52,7 +52,7 @@
   "succesfulAddMoneyContent": "{amount} <:blackToken:1304186797064065065> 已添加到 {user} 的余额。",
   "userNotFoundOnDataBase": "数据库中未找到用户 <@{user}>。",
   "succesfulTitle": "✅ 成功",
-  "succesfulDeletedUserContent": "用户 <@{user}> 已成功从数据库中删除。",
+  "succesfulDeletedUserContent": "用户 <@{user}> 已成功删除。",
   "sameLang": "语言不能与已设置的语言相同。",
   "succesfulChangeLanguage": "语言已成功更改为 {language}。",
   "userCatchNotHaveAccount": "该用户还没有账户！",

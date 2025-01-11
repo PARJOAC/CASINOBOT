@@ -52,7 +52,7 @@
   "succesfulAddMoneyContent": "{amount} <:blackToken:1304186797064065065> تم إضافتها إلى رصيد {user}.",
   "userNotFoundOnDataBase": "لم يتم العثور على المستخدم <@{user}> في قاعدة البيانات.",
   "succesfulTitle": "✅ نجاح",
-  "succesfulDeletedUserContent": "تم حذف المستخدم <@{user}> بنجاح من قاعدة البيانات.",
+  "succesfulDeletedUserContent": "تم حذف المستخدم <@{user}> بنجاح.",
   "sameLang": "لا يمكن أن تكون اللغة نفسها كما هي بالفعل.",
   "succesfulChangeLanguage": "تم تغيير اللغة بنجاح إلى {language}.",
   "userCatchNotHaveAccount": "هذا المستخدم ليس لديه حساب بعد!",

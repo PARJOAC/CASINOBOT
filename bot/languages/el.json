@@ -52,7 +52,7 @@
   "succesfulAddMoneyContent": "{amount} <:blackToken:1304186797064065065> έχει προστεθεί στο υπόλοιπο του {user}.",
   "userNotFoundOnDataBase": "Ο χρήστης <@{user}> δεν βρέθηκε στη βάση δεδομένων.",
   "succesfulTitle": "✅ Επιτυχία",
-  "succesfulDeletedUserContent": "Ο χρήστης <@{user}> έχει διαγραφεί επιτυχώς από τη βάση δεδομένων.",
+  "succesfulDeletedUserContent": "Ο χρήστης <@{user}> διαγράφηκε με επιτυχία.",
   "sameLang": "Η γλώσσα δεν μπορεί να είναι η ίδια με αυτή που έχει ήδη καθιερωθεί.",
   "succesfulChangeLanguage": "Η γλώσσα άλλαξε με επιτυχία σε {language}.",
   "userCatchNotHaveAccount": "Αυτός ο χρήστης δεν έχει ακόμη λογαριασμό!",

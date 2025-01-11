@@ -52,7 +52,7 @@
   "succesfulAddMoneyContent": "{amount} <:blackToken:1304186797064065065> has been added to {user}'s balance.",
   "userNotFoundOnDataBase": "User <@{user}> not found in the database.",
   "succesfulTitle": "✅ Success",
-  "succesfulDeletedUserContent": "User <@{user}> has been successfully deleted from the database.",
+  "succesfulDeletedUserContent": "User <@{user}> has been successfully deleted.",
   "sameLang": "The language cannot be the same as what is already established.",
   "succesfulChangeLanguage": "Language has been successfully changed to {language}.",
   "userCatchNotHaveAccount": "This user don't have account yet!",

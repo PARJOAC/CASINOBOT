@@ -52,7 +52,7 @@
   "succesfulAddMoneyContent": "{amount} <:blackToken:1304186797064065065> {user} के बैलेंस में जोड़ा गया है।",
   "userNotFoundOnDataBase": "उपयोगकर्ता <@{user}> को डेटाबेस में नहीं मिला।",
   "succesfulTitle": "✅ सफल",
-  "succesfulDeletedUserContent": "उपयोगकर्ता <@{user}> को सफलतापूर्वक डेटाबेस से हटा दिया गया है।",
+  "succesfulDeletedUserContent": "उपयोगकर्ता <@{user}> को सफलतापूर्वक हटा दिया गया है।",
   "sameLang": "भाषा वही नहीं हो सकती जो पहले से स्थापित है।",
   "succesfulChangeLanguage": "भाषा को सफलतापूर्वक {language} में बदल दिया गया है।",
   "userCatchNotHaveAccount": "इस उपयोगकर्ता का अभी तक खाता नहीं है!",
