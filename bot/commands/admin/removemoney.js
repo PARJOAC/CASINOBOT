@@ -29,7 +29,7 @@ module.exports = {
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
   category: "admin",
   admin: false,
-  commandId: "1327698840530325619",
+  commandId: "1296240894214934530",
   async execute(interaction, client, lang) {
     const check = await userCanUseCommand(interaction, lang, client);
     if (check.status) return;
