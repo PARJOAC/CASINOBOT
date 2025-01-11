@@ -76,7 +76,7 @@ module.exports = {
       await greenEmbed(interaction, client, {
         type: "userSend",
         title: lang.userDeletedNotifyTitle,
-        description: lang.userMessageAddMoneyContent.replace("{user}", interaction.user.username),
+        description: lang.userDeletedNotifyContent.replace("{user}", interaction.user.username),
         fields: [
           { name: lang.serverName, value: interaction.guild.name, inline: false },
           { name: lang.reason, value: reason, inline: false }
