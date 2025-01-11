@@ -1,0 +1,302 @@
+{
+  "modifyProfileError": "Δεν έχετε τροποποιήσει τίποτα για τον χρήστη {user}.",
+  "modifyProfileContent": "Το προφίλ του χρήστη {user} φαίνεται τώρα έτσι:",
+  "errorBikeSellContent": "Δεν έχετε αρκετά ποδήλατα. Έχετε μόνο {bike}.",
+  "initProfile": "Παρακαλώ επιλέξτε τον τύπο δεδομένων που θέλετε να δείτε.",
+  "basicInfoButton": "Πληροφορίες",
+  "itemsButton": "Αντικείμενα",
+  "lastPlaysButton": "Τελευταία Παιχνίδια",
+  "bike": "🚲 Ποδήλατα",
+  "wonBike": "Κέρδισες επίσης ένα 🚲 Ποδήλατο!",
+  "onlyGuildOwner": "Μόνο {owner} έχει άδεια να εκτελέσει αυτήν την εντολή.",
+  "onlyCreatorBotGlobal": "Μπορείτε να εκτελέσετε αυτήν την εντολή μόνο με την οικονομία σε τοπική λειτουργία.",
+  "local": "τοπικός",
+  "global": "παγκόσμιος",
+  "setEconomy": "Ο τύπος οικονομίας έχει αλλάξει σε {type}.",
+  "cooldownTimeContentCrime": "Πρέπει να περιμένετε **{minutes}m {seconds}s** πριν διαπράξετε άλλο έγκλημα.",
+  "errorNotEnoughMoneyCrime": "Βεβαιωθείτε ότι έχετε τουλάχιστον 2,500 νομίσματα πριν επιχειρήσετε ένα έγκλημα για να πληρώσετε το πρόστιμο αν πιαστείτε.",
+  "winCrime": "Διαπράξατε ένα έγκλημα και δεν πιαστήκατε!\n\nΚλέψατε με επιτυχία **{amount} <:blackToken:1304186797064065065>**.",
+  "loseCrime": "Σας έπιασαν να διαπράττετε έγκλημα. Πληρώσατε ένα πρόστιμο των **{amount} νομισμάτων** για να αποφύγετε περαιτέρω συνέπειες.",
+  "loseCrimeTitle": "🚨 Σας έπιασαν!",
+  "cancelButton": "Ακύρωση",
+  "userCurrentlyPlaying": "Ο χρήστης παίζει αυτή τη στιγμή, περιμένετε να τελειώσει το παιχνίδι.",
+  "interactionInitError": "Παρουσιάστηκε σφάλμα κατά την εκτέλεση της εντολής, προσπαθήστε ξανά σε λίγα δευτερόλεπτα.",
+  "flipCoin": "🪙 Πετώντας το νόμισμα...",
+  "lastBlackJack": "Τελευταία φορά έπαιξε Blackjack",
+  "lastCoinFlip": "Τελευταία φορά έπαιξε Αντιστροφή Νόμισμα",
+  "lastCrash": "Τελευταία φορά έπαιξε Crash",
+  "lastMinesweeper": "Τελευταία φορά έπαιξε Minesweeper",
+  "lastRace": "Τελευταία φορά έπαιξε Αγώνας",
+  "lastRoulette": "Τελευταία φορά έπαιξε Ρουλέτα",
+  "lastRps": "Τελευταία φορά έπαιξε Πέτρα-Ψαλίδι-Χαρτί",
+  "lastRussianRoulette": "Τελευταία φορά έπαιξε Ρώσικη Ρουλέτα",
+  "lastSlots": "Τελευταία φορά έπαιξε Κουλοχέρηδες",
+  "never": "Ποτέ δεν εκτελέστηκε",
+  "dmDisabled": "Ο χρήστης έχει απενεργοποιήσει τα DM και δεν έλαβε το μήνυμα.",
+  "waiting": "Κάνοντας εξαιρετικούς υπολογισμούς!",
+  "errorTitle": "❌ Σφάλμα",
+  "onlyCreatorBot": "Μόνο ο Δημιουργός Bot έχει άδεια να εκτελέσει αυτήν την εντολή.",
+  "minimumBet": "Το ποσό πρέπει να είναι μεγαλύτερο από 100.",
+  "succesfulAddMoneyTitle": "💸 Προστέθηκαν Χρήματα!",
+  "succesfulAddMoneyContent": "{amount} <:blackToken:1304186797064065065> έχει προστεθεί στο υπόλοιπο του {user}.",
+  "userNotFoundOnDataBase": "Ο χρήστης <@{user}> δεν βρέθηκε στη βάση δεδομένων.",
+  "succesfulTitle": "✅ Επιτυχία",
+  "succesfulDeletedUserContent": "Ο χρήστης <@{user}> έχει διαγραφεί επιτυχώς από τη βάση δεδομένων.",
+  "sameLang": "Η γλώσσα δεν μπορεί να είναι η ίδια με αυτή που έχει ήδη καθιερωθεί.",
+  "succesfulChangeLanguage": "Η γλώσσα άλλαξε με επιτυχία σε {language}.",
+  "userCatchNotHaveAccount": "Αυτός ο χρήστης δεν έχει ακόμη λογαριασμό!",
+  "userNotHaveMoney": "Ο χρήστης δεν έχει αρκετό υπόλοιπο για να αφαιρέσει αυτό το ποσό.",
+  "succesfulRemoveMoney": "{amount} <:blackToken:1304186797064065065> έχει αφαιρεθεί από το υπόλοιπο του {user}.",
+  "noCommands": "❌ Δεν υπάρχουν διαθέσιμες εντολές.",
+  "userNotHaveAccount": "Δεν έχετε ακόμη λογαριασμό! Δημιουργήστε έναν πρώτα.",
+  "userNotHaveAccountDaily": "Δεν έχετε ακόμη λογαριασμό! Αποκτήστε πρώτα ένα υπόλοιπο.",
+  "errorCommand": "Υπήρξε ένα σφάλμα κατά την εκτέλεση αυτής της εντολής!\n\nΠαρακαλούμε, αναφέρετέ το στο https://discord.com/invite/p8CDnWHZJq",
+  "suggestErrorChannel": "Το κανάλι υποστήριξης δεν έχει ρυθμιστεί ή δεν βρέθηκε, παρακαλώ αναφέρετέ το.",
+  "suggestTitle": "📩 Νέα Πρόταση!",
+  "suggestContent": "έστειλε την ακόλουθη πρόταση:",
+  "suggestSuccess": "✅ Η πρότασή σας στάλθηκε με επιτυχία!",
+  "negativeItem": "Το αντικείμενο πρέπει να είναι μεγαλύτερο από 0.",
+  "buyItemTitle": "🛒 Αντικείμενα Καταστήματος 🛒",
+  "invalidItemSelect": "❌ Μη έγκυρο επιλεγμένο αντικείμενο.",
+  "errorNotEnoughMoneyToBuyContent": "Δεν έχετε αρκετά χρήματα για να αγοράσετε αυτό το αντικείμενο.",
+  "purchaseSucContent": "Αγοράσατε {amount} {item} για {totalCost} <:blackToken:1304186797064065065>.",
+  "cooldownActiveTitle": "⏳ Βρίσκεστε σε Cooldown!",
+  "cooldownTimeContentWeekly": "Πρέπει να περιμένετε **{days}d {hours}h {minutes}m {seconds}s** πριν συλλέξετε ξανά την εβδομαδιαία σας ανταμοιβή.",
+  "cooldownTimeContentDaily": "Πρέπει να περιμένετε **{hours}h {minutes}m {seconds}s** πριν συλλέξετε ξανά την καθημερινή σας ανταμοιβή.",
+  "cooldownTimeContentWork": "Πρέπει να περιμένετε **{minutes}m {seconds}s** πριν συλλέξετε ξανά την ανταμοιβή της εργασίας σας.",
+  "cooldownVoteTimeContent": "Πρέπει να περιμένετε **{hours}h {minutes}m {seconds}s** πριν συλλέξετε ξανά την ανταμοιβή της ψήφου σας.",
+  "dailyRewardTitle": "✅ Ημερήσια Ανταμοιβή Συλλέχθηκε!",
+  "weeklyRewardTitle": "✅ Εβδομαδιαία Ανταμοιβή Συλλέχθηκε!",
+  "economyRewardContent": "Συλλέξατε **{amount} <:blackToken:1304186797064065065>**!",
+  "nothingToSellContent": "Δεν έχετε αντικείμενα για πώληση.",
+  "errorBalloonSellContent": "Δεν έχετε αρκετά μπαλόνια. Έχετε μόνο {balloon}.",
+  "errorMobileSellContent": "Δεν έχετε αρκετά κινητά. Έχετε μόνο {mobile}.",
+  "succesfulSellContent": "Πουλήσατε {quantity} {item} για {amount} <:blackToken:1304186797064065065>.",
+  "balloon": "🎈 Μπαλόνια",
+  "mobile": "📱 Κινητά",
+  "workRewardTitle": "✅ Ανταμοιβή Εργασίας Συλλέχθηκε!",
+  "amountErrorNegativeNumberContent": "Το ποσό πρέπει να είναι θετικός αριθμός.",
+  "amountErrorIntNumberContent": "Το ποσό πρέπει να είναι ακέραιος αριθμός.",
+  "cashOutButton": "Ανάληψη 🛑",
+  "crashTitleOnPlaying": "CRASH 💥",
+  "betField": "Στοιχηματίζετε:",
+  "multiplierField": "Συνολικός πολλαπλασιαστής:",
+  "winTitle": "🎉 Κερδίζετε!",
+  "winField": "Κερδίσατε:",
+  "youLose": "❌ Χάνετε!",
+  "loseField": "Χάσατε:",
+  "balanceField": "Το υπόλοιπό σας:",
+  "cashoutFail": "Ο πολλαπλασιαστής πρέπει να είναι μεγαλύτερος από 0.",
+  "cashOutsuccesful": "🎉 Ανάληψη επιτυχής!",
+  "xpGained": "Κέρδη XP:",
+  "retireButton": "Αποχώρηση",
+  "minesweeperGameTitle": "💣 Παιχνίδι Minesweeper",
+  "minesweeperGameDescription": "Κάντε κλικ σε ένα κουμπί για να δοκιμάσετε την τύχη σας! Αποφύγετε τις βόμβες για να αυξήσετε τον πολλαπλασιαστή σας. Κάντε κλικ στο \"Αποχώρηση\" για να ασφαλίσετε τα κέρδη σας.",
+  "minesweeperGameWinDescription": "Συγχαρητήρια! Φτάσατε στον μέγιστο αριθμό επιτυχημένων πυροβολισμών.",
+  "safeTitle": "✅ Είστε ασφαλής!",
+  "minesweeperGameSafeDescription": "Συνεχίστε ή κάντε ανάληψη για να ασφαλίσετε τα κέρδη σας!",
+  "timeException": "⏳ Λήξη χρόνου!",
+  "timeExceptionDescription": "Ο χρόνος σας τελείωσε και χάσατε την ευκαιρία να παίξετε.",
+  "horseStartingTitle": "🏇 Ιπποδρομίες - Ξεκινούν σύντομα!",
+  "horseStartingContent": "Ο αγώνας πρόκειται να ξεκινήσει! Παρακαλώ περιμένετε...",
+  "yourRace": "Ο δρομέας σας:",
+  "raceResult": "Αποτέλεσμα αγώνα:",
+  "raceResultContent": "Ο δρομέας {number} ΚΕΡΔΙΣΕ! 🎉",
+  "rouletteErrorInvalidNumber": "Παρακαλώ επιλέξτε έναν αριθμό μεταξύ 1 και 36.",
+  "rouletteErrorRedNumber": "Αυτός ο αριθμός δεν είναι έγκυρος για το κόκκινο χρώμα.\nΚόκκινοι αριθμοί: **1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36**",
+  "rouletteErrorBlackNumber": "Αυτός ο αριθμός δεν είναι έγκυρος για το μαύρο χρώμα.\nΜαύροι αριθμοί: **2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35**",
+  "rouletteErrorGreenNumber": "Αυτός ο αριθμός δεν είναι έγκυρος για το πράσινο χρώμα.\nΠράσινοι αριθμοί: **0**",
+  "rouletteSpiningTitle": "🎡 Ρουλέτα - Περιστροφή...",
+  "rouletteSpiningContent": "Η μπάλα περιστρέφεται... Παρακαλώ περιμένετε! 🎡",
+  "rouletteBallLandedTitle": "Η μπάλα προσγειώθηκε:",
+  "rouletteBallLandedContent": "{result} ({resultColor})",
+  "rouletteColorRed": "**🟥 ΚΟΚΚΙΝΟ**",
+  "rouletteColorBlack": "**⬛ ΜΑΥΡΟ**",
+  "rouletteColorGreen": "**🟩 ΠΡΑΣΙΝΟ**",
+  "yourPrediction": "Η πρόβλεψή σας:",
+  "rockButton": "🪨 Πέτρα",
+  "paperButton": "📄 Χαρτί",
+  "scissorsButton": "✂️ Ψαλίδι",
+  "chooseMove": "⏳ Επιλέξτε την κίνησή σας!",
+  "tieTitle": "Είναι ισοπαλία! 🤝",
+  "userChoiceField": "Η επιλογή σας:",
+  "botChoiceField": "Η επιλογή του bot:",
+  "shootButton": "Πυροβολισμός",
+  "initRussianRouletteTitle": "🔫 Ρώσικη Ρουλέτα",
+  "initRussianRouletteDescription": "Κάντε κλικ στο **Πυροβολισμός** για να ρισκάρετε άλλη μια γύρα ή στο **Ανάληψη** για να συλλέξετε τα τρέχοντα κέρδη σας.",
+  "roundsSurvived": "Γύρος",
+  "slotSpinTitle": "🎰 Περιστροφή Κουλοχέρη!",
+  "yourBetWithCoin": "Το στοίχημά σας: {amount} <:blackToken:1304186797064065065>",
+  "slotSpinResultWin": "🎉 Κερδίζετε! Κερδίσατε: **{result} <:blackToken:1304186797064065065>**.",
+  "slotSpinResultLost": "😢 Χάνετε! Καλή τύχη την επόμενη φορά!",
+  "resultSpin": "Αποτέλεσμα",
+  "someUser": "Δεν μπορείτε να δώσετε χρήματα στον εαυτό σας!",
+  "giftSenderNotHaveMoneyContent": "Δεν έχετε αρκετά χρήματα για να κάνετε αυτό το δώρο.",
+  "giftSucContent": "Χαρίσατε επιτυχώς {amount} <:blackToken:1304186797064065065> στον {user}.",
+  "giftSucUserContent": "Ο χρήστης {user} σας χάρισε {amount} <:blackToken:1304186797064065065>!",
+  "profileTitle": "👤 Το Προφίλ του {user}",
+  "votesText": "Πολλαπλασιαστής χρημάτων:",
+  "levelField": "Επίπεδο",
+  "experienceField": "Εμπειρία",
+  "progressLevel": "Πρόοδος προς το επόμενο επίπεδο:",
+  "errorNotPlayerFound": "Δεν βρέθηκαν παίκτες στη βάση δεδομένων",
+  "top10Content": "**#{topNumber}** - {user}: {category}",
+  "unknownTopPlayer": "❌ Άγνωστος Παίκτης",
+  "topLevelContent": "Επίπεδο {level}",
+  "topTitle": "🏆 Top 10 - {category}",
+  "moneyTitle": "Χρήματα <:blackToken:1304186797064065065>",
+  "levelTitle": "Επίπεδο 🎮",
+  "requestedBy": "Ζητήθηκε από τον {user}",
+  "alreadyExecutingCommand": "Ήδη εκτελείτε μια εντολή παιχνιδιού. Παρακαλώ περιμένετε να ολοκληρωθεί πριν την εκτελέσετε ξανά.",
+  "initialVoteTitle": "🌟 Ψηφίστε για να λάβετε ανταμοιβές! 🌟",
+  "initialVoteDescription": "Κάντε κλικ [εδώ]({url}) για να ψηφίσετε το bot στο top.gg! Η ψηφοφορία βοηθάει στην υποστήριξη του bot και επιτρέπει να φτάσει σε περισσότερους χρήστες.\n\nΕνώ εκτελείται αυτή η εντολή, δεν θα μπορείτε να παίξετε.",
+  "thanksForVoting": "🌟 Ευχαριστούμε που Ψηφίσατε! 🌟",
+  "alreadyVotedDescription": "Η ψήφος σας σημαίνει πολλά για εμάς και βοηθάει να μεγαλώνουμε και να βελτιωνόμαστε κάθε μέρα. Σας ευχαριστούμε ειλικρινά που αφιερώσατε τον χρόνο σας για να μας υποστηρίξετε. Η συμμετοχή σας είναι απαραίτητη!\nΘυμηθείτε, **μπορείτε να ψηφίσετε ξανά σε 12 ώρες**. Ελπίζουμε να υπολογίζουμε σε εσάς ξανά! 💖",
+  "yourReward": "Η Ανταμοιβή σας:",
+  "errorVoteStatus": "Παρουσιάστηκε σφάλμα κατά τον έλεγχο της κατάστασης της ψήφου σας. Παρακαλώ προσπαθήστε ξανά αργότερα.",
+  "receivedCoins": "Έχετε λάβει {money} <:blackToken:1304186797064065065>",
+  "receivedItem": "Λάβατε ένα {item} ως ανταμοιβή!",
+  "receivedMultiplier": "Κερδίσατε έναν μόνιμο πολλαπλασιαστή x0.1 ως ανταμοιβή! Τώρα έχετε: x{total}",
+  "receivedExperience": "Έχετε λάβει {total} XP!",
+  "errorEnoughMoneyContent": "Δεν έχετε αρκετά χρήματα για να τοποθετήσετε αυτό το στοίχημα.",
+  "errorMaxBetContent": "Το μέγιστο στοίχημα για επίπεδο **{level}** είναι **{number} <:blackToken:1304186797064065065>**. Εισάγετε ένα χαμηλότερο στοίχημα και προσπαθήστε ξανά.",
+  "wonBalloon": "Κερδίσατε επίσης ένα 🎈 μπαλόνι!",
+  "wonMobile": "Κερδίσατε επίσης ένα 📱 κινητό!",
+  "blackJackButtonHit": "Χτύπημα",
+  "blackjackStand": "Στάση",
+  "initBlackjackTitle": "🃏 Blackjack",
+  "initBlackjackDescription": "Κάντε κλικ στο Χτύπημα για να τραβήξετε άλλη μια κάρτα ή Στάση για να σταθείτε.",
+  "yourHand": "Το χέρι σας",
+  "dealerHand": "Το χέρι του dealer",
+  "blackjackLoseDescription": "Έχετε περάσει τους 21 ή έχετε λιγότερο από τον αντίπαλό σας και έχετε χάσει!",
+  "commands": {
+    "deleteuser": {
+      "name": "deleteuser",
+      "description": "🗑️ Διαγράψτε έναν χρήστη από τη βάση δεδομένων."
+    },
+    "addmoney": {
+      "name": "addmoney",
+      "description": "💵 Προσθέστε χρήματα σε έναν χρήστη."
+    },
+    "setlang": {
+      "name": "setlang",
+      "description": "🌐 Αλλαγή της γλώσσας του bot."
+    },
+    "removemoney": {
+      "name": "removemoney",
+      "description": "💸 Εξαλείψτε χρήματα από το υπόλοιπο ενός χρήστη."
+    },
+    "daily": {
+      "name": "daily",
+      "description": "🎁 Συλλέξτε την καθημερινή σας ανταμοιβή των 10,000 νομισμάτων."
+    },
+    "weekly": {
+      "name": "weekly",
+      "description": "💎 Συλλέξτε την εβδομαδιαία σας ανταμοιβή των 50,000 νομισμάτων."
+    },
+    "sell": {
+      "name": "sell",
+      "description": "<:blackToken:1304186797064065065> Πουλήστε τα μπαλόνια και τα κινητά σας για να κερδίσετε νομίσματα."
+    },
+    "crash": {
+      "name": "crash",
+      "description": "💥 Παίξτε Crash και στοιχηματίστε για να κερδίσετε."
+    },
+    "race": {
+      "name": "race",
+      "description": "🏇 Στοιχηματίστε σε έναν ιπποδρομικό αγώνα και κερδίστε πολλά."
+    },
+    "roulette": {
+      "name": "roulette",
+      "description": "🎡 Παίξτε ρουλέτα μαντεύοντας το χρώμα."
+    },
+    "rps": {
+      "name": "rps",
+      "description": "✂️ Παίξτε Πέτρα, Χαρτί ή Ψαλίδι με στοίχημα."
+    },
+    "slots": {
+      "name": "slots",
+      "description": "🎰 Παίξτε τον κουλοχέρη με στοίχημα."
+    },
+    "buy": {
+      "name": "buy",
+      "description": "🛒 Αγοράστε αντικείμενα στο κατάστημα."
+    },
+    "gift": {
+      "name": "gift",
+      "description": "🎁 Δώστε χρήματα σε άλλον χρήστη."
+    },
+    "help": {
+      "name": "help",
+      "description": "🆘 Εμφανίστε τις διαθέσιμες εντολές."
+    },
+    "profile": {
+      "name": "profile",
+      "description": "👤 Ελέγξτε το προφίλ ενός χρήστη, συμπεριλαμβανομένου του υπολοίπου και των στατιστικών."
+    },
+    "top": {
+      "name": "top",
+      "description": "🏆 Εμφανίστε τους κορυφαίους 10 παίκτες με τα περισσότερα χρήματα ή το υψηλότερο επίπεδο."
+    },
+    "suggest": {
+      "name": "suggest",
+      "description": "💬 Στείλτε μια πρόταση στο κανάλι υποστήριξης."
+    },
+    "work": {
+      "name": "work",
+      "description": "⛏️ Εργαστείτε και κερδίστε 1000 νομίσματα!"
+    },
+    "vote": {
+      "name": "vote",
+      "description": "🗳️ Ψηφίστε για να λάβετε ανταμοιβές!"
+    },
+    "russianroulette": {
+      "name": "russianroulette",
+      "description": "🔫 Παίξτε Ρώσικη ρουλέτα με στοίχημα!"
+    },
+    "blackjack": {
+      "name": "blackjack",
+      "description": "🃏 Παίξτε Blackjack με στοίχημα!"
+    },
+    "coinflip": {
+      "name": "coinflip",
+      "description": "💲 Παίξτε κορώνα ή γράμματα με στοίχημα για να κερδίσετε χρήματα!"
+    },
+    "minesweeper": {
+      "name": "minesweeper",
+      "description": "💣 Προσπαθήστε να αποφύγετε τις βόμβες για να αυξήσετε τα κέρδη σας!"
+    },
+    "maintance": {
+      "name": "maintance",
+      "description": "🔧 Αλλαγή της κατάστασης του bot συντήρησης (μόνο για τον δημιουργό του bot)."
+    },
+    "crime": {
+      "name": "crime",
+      "description": "🚨 Μπορείτε να διαπράξετε ένα έγκλημα για να κερδίσετε χρήματα, αλλά μπορείτε να πιαστείτε!"
+    },
+    "seteconomy": {
+      "name": "seteconomy",
+      "description": "💱 Αλλαγή του τύπου οικονομίας μεταξύ τοπικού και παγκόσμιου."
+    },
+    "updates": {
+      "name": "updates",
+      "description": "💾 Δείτε την τελευταία ενημέρωση του bot (μόνο στα αγγλικά)"
+    },
+    "modifyprofile": {
+      "name": "modifyprofile",
+      "description": "🎭 Επεξεργαστείτε το προφίλ του παίκτη."
+    }
+  },
+  "categories": {
+    "users": "Χρήστες",
+    "admin": "Διαχειριστές",
+    "games": "Παιχνίδια",
+    "economy": "Οικονομία",
+    "assist": "Υποστήριξη"
+  },
+  "helpWelcome": {
+    "title": "✨ Εξερευνήστε τις Εντολές μας! ✨",
+    "description": "🤖 Εδώ μπορείτε να βρείτε όλες τις διαθέσιμες εντολές.\n\n** Επιλέξτε μια κατηγορία παρακάτω για να εξερευνήσετε!**\nΑν χρειάζεστε βοήθεια, επισκεφθείτε [αυτόν τον οδηγό](https://casinobot.gitbook.io/casinobot-docs-en) ή μπείτε στον [διακομιστή υποστήριξης](https://discord.com/invite/p8CDnWHZJq).\nΥπενθύμιση: αν ψηφίσετε, μπορείτε να λάβετε ανταμοιβές με την εντολή /vote 😉"
+  },
+  "noPermission": "Γειά σας! Χρειάζομαι μερικές επιπλέον άδειες για να λειτουργήσω σωστά σε αυτό το κανάλι. Παρακαλώ βεβαιωθείτε ότι έχω τις ακόλουθες άδειες:\n\n{permissions}\n\nΕπικοινωνήστε με έναν διαχειριστή διακομιστή για να ρυθμίσετε αυτές τις άδειες στις ρυθμίσεις ρόλων ή στις άδειες καναλιού.\n\n---------------\n\nΑν αντιμετωπίζετε προβλήματα, μπείτε στον διακομιστή υποστήριξης https://discord.com/invite/p8CDnWHZJq και ζητήστε βοήθεια 💖"
+}

@@ -1,0 +1,302 @@
+{
+  "modifyProfileError": "ユーザー {user} に対して何も変更していません。",
+  "modifyProfileContent": "{user} のプロフィールは現在このようになっています:",
+  "errorBikeSellContent": "自転車が足りません。あなたは {bike} 台しか持っていません。",
+  "initProfile": "表示したいデータの種類を選択してください。",
+  "basicInfoButton": "情報",
+  "itemsButton": "アイテム",
+  "lastPlaysButton": "最近のプレイ",
+  "bike": "🚲 自転車",
+  "wonBike": "あなたも🚲自転車を獲得しました！",
+  "onlyGuildOwner": "{owner} のみがこのコマンドを実行する権限を持っています。",
+  "onlyCreatorBotGlobal": "このコマンドは、ローカル モードのエコノミーでのみ実行できます。",
+  "local": "ローカル",
+  "global": "グローバル",
+  "setEconomy": "経済タイプは{type}に変更されました。",
+  "cooldownTimeContentCrime": "別の犯罪を犯す前に**{minutes}分{seconds}秒**待つ必要があります。",
+  "errorNotEnoughMoneyCrime": "犯罪を犯す前に少なくとも2,500コインを持っていることを確認してください、捕まった場合に罰金を支払うためです。",
+  "winCrime": "犯罪を犯して捕まらなかった！\n\n**{amount} <:blackToken:1304186797064065065>**を盗んで成功しました。",
+  "loseCrime": "犯罪を犯しているところを捕まりました。大きな結果を避けるために**{amount}コイン**の罰金を支払いました。",
+  "loseCrimeTitle": "🚨 捕まった！",
+  "cancelButton": "キャンセル",
+  "userCurrentlyPlaying": "ユーザーは現在プレイ中です。ゲームが終了するまでお待ちください。",
+  "interactionInitError": "コマンドの実行中にエラーが発生しました。数秒後にもう一度お試しください。",
+  "flipCoin": "🪙 コインを投げています...",
+  "lastBlackJack": "最後にプレイしたブラックジャック",
+  "lastCoinFlip": "最後にプレイしたコイン投げ",
+  "lastCrash": "最後にプレイしたクラッシュ",
+  "lastMinesweeper": "最後にプレイしたマインスイーパー",
+  "lastRace": "最後にプレイしたレース",
+  "lastRoulette": "最後にプレイしたルーレット",
+  "lastRps": "最後にプレイしたじゃんけん",
+  "lastRussianRoulette": "最後にプレイしたロシアンルーレット",
+  "lastSlots": "最後にプレイしたスロット",
+  "never": "未実行",
+  "dmDisabled": "ユーザーはDMを無効にしており、メッセージを受け取っていません。",
+  "waiting": "特別な計算中！",
+  "errorTitle": "❌ エラー",
+  "onlyCreatorBot": "このコマンドを実行する権限があるのはボットの作成者のみです。",
+  "minimumBet": "ベット額は100より大きい必要があります。",
+  "succesfulAddMoneyTitle": "💸 お金が追加されました！",
+  "succesfulAddMoneyContent": "{amount} <:blackToken:1304186797064065065> が {user} の残高に追加されました。",
+  "userNotFoundOnDataBase": "データベースにユーザー <@{user}> は見つかりませんでした。",
+  "succesfulTitle": "✅ 成功",
+  "succesfulDeletedUserContent": "ユーザー <@{user}> はデータベースから正常に削除されました。",
+  "sameLang": "言語は既に設定されている言語と同じにできません。",
+  "succesfulChangeLanguage": "言語は正常に {language} に変更されました。",
+  "userCatchNotHaveAccount": "このユーザーはまだアカウントを持っていません！",
+  "userNotHaveMoney": "ユーザーはこの金額を引き出すための十分な残高を持っていません。",
+  "succesfulRemoveMoney": "{amount} <:blackToken:1304186797064065065> が {user} の残高から引かれました。",
+  "noCommands": "❌ コマンドは利用できません。",
+  "userNotHaveAccount": "まだアカウントを作成していません！最初にアカウントを作成してください。",
+  "userNotHaveAccountDaily": "まだアカウントを作成していません！最初に残高を取得してください。",
+  "errorCommand": "このコマンドを実行中にエラーが発生しました！\n\n問題があれば、https://discord.com/invite/p8CDnWHZJq で報告してください。",
+  "suggestErrorChannel": "サポートチャンネルが設定されていないか、見つかりませんでした。報告してください。",
+  "suggestTitle": "📩 新しい提案！",
+  "suggestContent": "が次の提案を送信しました：",
+  "suggestSuccess": "✅ あなたの提案が正常に送信されました！",
+  "negativeItem": "アイテムは0より大きい必要があります。",
+  "buyItemTitle": "🛒 アイテムを購入 🛒",
+  "invalidItemSelect": "無効なアイテムが選択されました。",
+  "errorNotEnoughMoneyToBuyContent": "このアイテムを購入するための十分な金額がありません。",
+  "purchaseSucContent": "{amount} {item} を {totalCost} <:blackToken:1304186797064065065> で購入しました。",
+  "cooldownActiveTitle": "⏳ クールダウン中！",
+  "cooldownTimeContentDaily": "次に日次報酬を収集する前に **{hours}h {minutes}m {seconds}s** 待つ必要があります。",
+  "cooldownTimeContentWork": "次に仕事報酬を収集する前に **{minutes}m {seconds}s** 待つ必要があります。",
+  "cooldownVoteTimeContent": "次に投票報酬を収集する前に **{hours}h {minutes}m {seconds}s** 待つ必要があります。",
+  "dailyRewardTitle": "✅ 日次報酬を収集しました！",
+  "cooldownTimeContentWeekly": "次に週次報酬を収集する前に {days}d {hours}h {minutes}m {seconds}s 待つ必要があります。",
+  "weeklyRewardTitle": "✅ 週次報酬を収集しました！",
+  "economyRewardContent": "あなたは **{amount} <:blackToken:1304186797064065065>** を収集しました！",
+  "nothingToSellContent": "売るアイテムがありません。",
+  "errorBalloonSellContent": "風船が足りません。現在 {balloon} 個しかありません。",
+  "errorMobileSellContent": "携帯電話が足りません。現在 {mobile} 個しかありません。",
+  "succesfulSellContent": "{quantity} {item} を {amount} <:blackToken:1304186797064065065> で販売しました。",
+  "balloon": "🎈 風船",
+  "mobile": "📱 携帯電話",
+  "workRewardTitle": "✅ 仕事の報酬を収集しました！",
+  "amountErrorNegativeNumberContent": "金額は正の数でなければなりません。",
+  "amountErrorIntNumberContent": "金額は整数でなければなりません。",
+  "cashOutButton": "キャッシュアウト 🛑",
+  "crashTitleOnPlaying": "CRASH 💥",
+  "betField": "あなたのベット額：",
+  "multiplierField": "総掛け算倍率：",
+  "winTitle": "🎉 あなたの勝ち！",
+  "winField": "あなたが勝った額：",
+  "youLose": "❌ あなたは負けました！",
+  "loseField": "あなたが失った額：",
+  "balanceField": "あなたの残高：",
+  "cashoutFail": "掛け算倍率は0より大きくなければなりません。",
+  "cashOutsuccesful": "🎉 キャッシュアウト成功！",
+  "xpGained": "獲得したXP：",
+  "retireButton": "引退",
+  "minesweeperGameTitle": "💣 マインスイーパーゲーム",
+  "minesweeperGameDescription": "ボタンをクリックして運を試してみてください！爆弾を避けて掛け算倍率を上げましょう。「引退」をクリックして、獲得した報酬を確保できます。",
+  "minesweeperGameWinDescription": "おめでとうございます！最大数のショットを達成しました。",
+  "safeTitle": "✅ あなたは安全です！",
+  "minesweeperGameSafeDescription": "続けるか、キャッシュアウトして報酬を確保しますか？",
+  "timeException": "⏳ 時間切れ！",
+  "timeExceptionDescription": "時間が切れ、プレイするチャンスを失いました。",
+  "horseStartingTitle": "🏇 馬レース - もうすぐスタート！",
+  "horseStartingContent": "レースが間もなく開始します！少々お待ちください...",
+  "yourRace": "あなたの競走馬：",
+  "raceResult": "レース結果：",
+  "raceResultContent": "競走馬 {number} が勝ちました！ 🎉",
+  "rouletteErrorInvalidNumber": "1から36の間の数字を選んでください。",
+  "rouletteErrorRedNumber": "この数字は赤色には無効です。\n赤い数字：**1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36**",
+  "rouletteErrorBlackNumber": "この数字は黒色には無効です。\n黒い数字：**2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35**",
+  "rouletteErrorGreenNumber": "この数字は緑色には無効です。\n緑の数字：**0**",
+  "rouletteSpiningTitle": "🎡 ルーレット - 回転中...",
+  "rouletteSpiningContent": "ボールが回転しています...お待ちください！ 🎡",
+  "rouletteBallLandedTitle": "ボールが止まった場所：",
+  "rouletteBallLandedContent": "{result} ({resultColor})",
+  "rouletteColorRed": "**🟥 赤**",
+  "rouletteColorBlack": "**⬛ 黒**",
+  "rouletteColorGreen": "**🟩 緑**",
+  "yourPrediction": "あなたの予測：",
+  "rockButton": "🪨 石",
+  "paperButton": "📄 紙",
+  "scissorsButton": "✂️ ハサミ",
+  "chooseMove": "⏳ あなたの手を選んでください！",
+  "tieTitle": "引き分けです！ 🤝",
+  "userChoiceField": "あなたの選択：",
+  "botChoiceField": "ボットの選択：",
+  "shootButton": "発射",
+  "initRussianRouletteTitle": "🔫 ロシアンルーレット",
+  "initRussianRouletteDescription": "次のラウンドをリスクに挑戦するには **発射** をクリック、現在の報酬を収集するには **キャッシュアウト** をクリックしてください。",
+  "roundsSurvived": "ラウンド",
+  "slotSpinTitle": "🎰 スロットマシン スピン！",
+  "yourBetWithCoin": "あなたの賭け金：{amount} <:blackToken:1304186797064065065>",
+  "slotSpinResultWin": "🎉 あなたの勝ち！ あなたが勝った額：**{result} <:blackToken:1304186797064065065>**。",
+  "slotSpinResultLost": "😢 あなたは負けました！次回頑張ってください！",
+  "resultSpin": "結果",
+  "someUser": "自分自身にお金を与えることはできません！",
+  "giftSenderNotHaveMoneyContent": "この金額を贈るための十分な金額がありません。",
+  "giftSucContent": "{user} に {amount} <:blackToken:1304186797064065065> を正常に贈りました。",
+  "giftSucUserContent": "ユーザー {user} はあなたに {amount} <:blackToken:1304186797064065065> を贈りました！",
+  "profileTitle": "👤 {user} のプロフィール",
+  "votesText": "金額倍率：",
+  "levelField": "レベル",
+  "experienceField": "経験",
+  "progressLevel": "次のレベルへの進捗：",
+  "errorNotPlayerFound": "データベースにプレイヤーが見つかりません",
+  "top10Content": "**#{topNumber}** - {user}: {category}",
+  "unknownTopPlayer": "❌ 不明なプレイヤー",
+  "topLevelContent": "レベル {level}",
+  "topTitle": "🏆 トップ 10 - {category}",
+  "moneyTitle": "お金 <:blackToken:1304186797064065065>",
+  "levelTitle": "レベル 🎮",
+  "requestedBy": "{user} によってリクエストされました",
+  "alreadyExecutingCommand": "すでにゲームコマンドを実行しています。終了するまで待ってから再度実行してください。",
+  "initialVoteTitle": "🌟 報酬を受け取るために投票してください！ 🌟",
+  "initialVoteDescription": "[ここ]({url}) をクリックして bot に投票してください！投票は bot をサポートし、より多くのユーザーに届く手助けとなります。\n\nこのコマンドが実行中は、プレイできません。",
+  "thanksForVoting": "🌟 投票ありがとうございます！ 🌟",
+  "alreadyVotedDescription": "あなたの投票は私たちにとって非常に重要で、毎日成長し、改善する手助けになります。私たちをサポートするために時間を割いてくださり、本当にありがとうございます。あなたの参加は非常に重要です！\n覚えておいてください、**12時間ごとに再投票できます**。またお力を貸していただけることを願っています！💖",
+  "yourReward": "あなたの報酬：",
+  "errorVoteStatus": "投票ステータスの確認中にエラーが発生しました。後でもう一度お試しください。",
+  "receivedCoins": "あなたは {money} <:blackToken:1304186797064065065> を受け取りました。",
+  "receivedItem": "あなたは {item} を報酬として受け取りました！",
+  "receivedMultiplier": "あなたは永久的な x0.1 の倍率を報酬として受け取りました！現在の倍率は x{total} です。",
+  "receivedExperience": "あなたは {total} XP を受け取りました！",
+  "errorEnoughMoneyContent": "この賭けをするのに十分な金額がありません。",
+  "errorMaxBetContent": "レベル **{level}** の最大賭け額は **{number} <:blackToken:1304186797064065065>** です。低い金額を入力して再度お試しください。",
+  "wonBalloon": "あなたは 🎈 バルーンも獲得しました！",
+  "wonMobile": "あなたは 📱 携帯電話も獲得しました！",
+  "blackJackButtonHit": "引く",
+  "blackjackStand": "スタンド",
+  "initBlackjackTitle": "🃏 ブラックジャック",
+  "initBlackjackDescription": "カードを引くには「引く」をクリック、スタンドするには「スタンド」をクリックしてください。",
+  "yourHand": "あなたの手",
+  "dealerHand": "ディーラーの手",
+  "blackjackLoseDescription": "21を超えたか、相手より少なかったため、あなたは負けました！",
+  "commands": {
+    "deleteuser": {
+      "name": "deleteuser",
+      "description": "🗑️ データベースからユーザーを削除します。"
+    },
+    "addmoney": {
+      "name": "addmoney",
+      "description": "💵 ユーザーの残高にお金を追加します。"
+    },
+    "setlang": {
+      "name": "setlang",
+      "description": "🌐 ボットの言語を変更します。"
+    },
+    "removemoney": {
+      "name": "removemoney",
+      "description": "💸 ユーザーの残高からお金を取り除きます。"
+    },
+    "daily": {
+      "name": "daily",
+      "description": "🎁 毎日の報酬10,000コインを集めます。"
+    },
+    "sell": {
+      "name": "sell",
+      "description": "<:blackToken:1304186797064065065> バルーンと携帯電話を売ってコインを得ます。"
+    },
+    "crash": {
+      "name": "crash",
+      "description": "💥 クラッシュをプレイし、賭けて勝つチャンスを得ます。"
+    },
+    "race": {
+      "name": "race",
+      "description": "🏇 競馬に賭けて大きく勝ちます。"
+    },
+    "roulette": {
+      "name": "roulette",
+      "description": "🎡 ルーレットをプレイし、色を予測します。"
+    },
+    "rps": {
+      "name": "rps",
+      "description": "✂️ 石、紙、ハサミを賭けてプレイします。"
+    },
+    "slots": {
+      "name": "slots",
+      "description": "🎰 スロットマシンを賭けてプレイします。"
+    },
+    "buy": {
+      "name": "buy",
+      "description": "🛒 店でアイテムを購入します。"
+    },
+    "gift": {
+      "name": "gift",
+      "description": "🎁 他のユーザーにお金を送ります。"
+    },
+    "weekly": {
+      "name": "weekly",
+      "description": "💎 毎週の報酬50,000コインを集めます。"
+    },
+    "help": {
+      "name": "help",
+      "description": "🆘 利用可能なコマンドを表示します。"
+    },
+    "profile": {
+      "name": "profile",
+      "description": "👤 ユーザーのプロフィールを確認し、残高や統計を表示します。"
+    },
+    "top": {
+      "name": "top",
+      "description": "🏆 最もお金が多いまたはレベルが高いトップ10のプレイヤーを表示します。"
+    },
+    "suggest": {
+      "name": "suggest",
+      "description": "💬 サポートチャンネルに提案を送信します。"
+    },
+    "work": {
+      "name": "work",
+      "description": "⛏️ 働いて1000コインを稼ぎます！"
+    },
+    "vote": {
+      "name": "vote",
+      "description": "🗳️ 投票して報酬を得ます！"
+    },
+    "russianroulette": {
+      "name": "russianroulette",
+      "description": "🔫 ロシアンルーレットを賭けてプレイします！"
+    },
+    "blackjack": {
+      "name": "blackjack",
+      "description": "🃏 ブラックジャックを賭けてプレイします！"
+    },
+    "coinflip": {
+      "name": "coinflip",
+      "description": "💲 コインフリップをプレイしてお金を勝ち取ります！"
+    },
+    "minesweeper": {
+      "name": "minesweeper",
+      "description": "💣 爆弾を避けて、勝利を高めましょう！"
+    },
+    "maintance": {
+      "name": "maintance",
+      "description": "🔧 ボットのメンテナンスステータスを変更します（ボット作成者のみ）。"
+    },
+    "crime": {
+      "name": "crime",
+      "description": "🚨 お金を稼ぐために犯罪を犯すことができますが、捕まるかもしれません！"
+    },
+    "seteconomy": {
+      "name": "seteconomy",
+      "description": "💱 経済のタイプをローカルとグローバルの間で変更します。"
+    },
+    "updates": {
+      "name": "updates",
+      "description": "💾 ボットの最新アップデートを見る（英語のみ）"
+    },
+    "modifyprofile": {
+      "name": "modifyprofile",
+      "description": "🎭 プレイヤーのプロフィールを編集します。"
+    }
+  },
+  "categories": {
+    "users": "ユーザー",
+    "admin": "管理者",
+    "games": "ゲーム",
+    "economy": "経済",
+    "assist": "サポート"
+  },
+  "helpWelcome": {
+    "title": "✨ コマンドを探検しよう！ ✨",
+    "description": "🤖 ここにすべての利用可能なコマンドがあります。\n\n** 下のカテゴリーを選んで、探してみてください！**\nヘルプが必要な場合は、[このガイド](https://casinobot.gitbook.io/casinobot-docs-en)をご覧いただくか、[サポートサーバー](https://discord.com/invite/p8CDnWHZJq)に参加してください。\nP.S. 投票で報酬を獲得できることを覚えておいてください /vote コマンド 😉"
+  },
+  "noPermission": "こんにちは！ このチャンネルで正常に動作するために、いくつかの追加権限が必要です。以下の権限を私が持っていることを確認してください：\n\n{permissions}\n\nこれらの権限をロール設定またはチャンネル設定で調整するためにサーバー管理者に連絡してください。\n\n---------------\n\n問題がある場合は、サポートサーバー https://discord.com/invite/p8CDnWHZJq に参加し、助けを求めてください 💖"
+}
