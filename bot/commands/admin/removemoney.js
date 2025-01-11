@@ -22,8 +22,8 @@ module.exports = {
     )
     .addStringOption((option) =>
       option
-        .setName("amount")
-        .setDescription("The amount of money to remove")
+        .setName("reason")
+        .setDescription("The reason for removing money")
         .setRequired(true)
     )
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
