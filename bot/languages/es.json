@@ -295,6 +295,10 @@
     "modifyprofile": {
       "name": "modifyprofile",
       "description": "🎭 Modificar el perfil del jugador."
+    },
+    "serverinfo": {
+      "name": "serverinfo",
+      "description": "📊 Obtén información sobre el servidor y CasinoBot"
     }
   },
   "categories": {

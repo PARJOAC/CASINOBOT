@@ -291,6 +291,10 @@
     "modifyprofile": {
       "name": "modifyprofile",
       "description": "🎭 تعديل ملف اللاعب."
+    },
+    "serverinfo": {
+      "name": "serverinfo",
+      "description": "📊 احصل على معلومات حول الخادم و CasinoBot"
     }
   },
   "categories": {

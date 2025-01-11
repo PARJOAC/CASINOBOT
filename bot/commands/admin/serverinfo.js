@@ -1,5 +1,6 @@
 const { SlashCommandBuilder, PermissionFlagsBits } = require("discord.js");
 const { userCanUseCommand } = require("../../functions/checkAdminCommand");
+const { greenEmbed } = require("../../functions/interactionEmbed");
 
 module.exports = {
   data: new SlashCommandBuilder()

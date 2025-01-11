@@ -295,6 +295,10 @@
     "modifyprofile": {
       "name": "modifyprofile",
       "description": "🎭 修改玩家个人资料。"
+    },
+    "serverinfo": {
+      "name": "serverinfo",
+      "description": "📊 获取关于服务器和CasinoBot的信息"
     }
   },
   "categories": {
