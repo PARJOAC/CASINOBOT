@@ -18,9 +18,8 @@ module.exports = {
             title: lang.serverInfoTitle,
             fields: [
                 { name: lang.serverName, value: interaction.guild.name, inline: true },
-                { name: lang.serverOwner, value: interaction.guild.owner.user.tag, inline: true },
                 { name: lang.serverMembers, value: interaction.guild.memberCount, inline: true },
-                { name: lang.economyType, value: guildData.economyType ? lang.activated : lang.deactivated, inline: true }
+                { name: lang.economyType, value: guildData.economyType ? lang.local : lang.global, inline: true }
             ],
             thumbnail: interaction.guild.iconURL({ dynamic: true }),
             footer: client.user.username,

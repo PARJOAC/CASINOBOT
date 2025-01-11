@@ -1,6 +1,7 @@
 {
-  "activated": "已激活",
-  "deactivated": "已停用",
+  "serverName": "服务器名称",
+  "serverMembers": "服务器成员",
+  "economyType": "经济类型",
   "userRemoveMoneyNotifyTitle": "资金已被移除",
   "userRemoveMoneyNotifyContent": "用户 {user} 从您的账户中移除了 {amount} <:blackToken:1304186797064065065>。",
   "userDeletedNotifyTitle": "您的账户已被删除",

@@ -1,6 +1,7 @@
 {
-  "activated": "Activado",
-  "deactivated": "Desactivado",
+  "serverName": "Nombre del servidor",
+  "serverMembers": "Miembros del servidor",
+  "economyType": "Tipo de economía",
   "userRemoveMoneyNotifyTitle": "Se han eliminado fondos",
   "userRemoveMoneyNotifyContent": "El usuario {user} ha eliminado {amount} <:blackToken:1304186797064065065> de tu cuenta.",
   "userDeletedNotifyTitle": "Tu cuenta ha sido eliminada",

@@ -1,6 +1,7 @@
 {
-  "activated": "Ενεργοποιημένο",
-  "deactivated": "Απενεργοποιημένο",
+  "serverName": "Όνομα διακομιστή",
+  "serverMembers": "Μέλη διακομιστή",
+  "economyType": "Τύπος οικονομίας",
   "userRemoveMoneyNotifyTitle": "Αφαιρέθηκαν χρήματα",
   "userRemoveMoneyNotifyContent": "Ο χρήστης {user} αφαίρεσε {amount} <:blackToken:1304186797064065065> από τον λογαριασμό σου.",
   "userDeletedNotifyTitle": "Ο λογαριασμός σου διαγράφηκε",

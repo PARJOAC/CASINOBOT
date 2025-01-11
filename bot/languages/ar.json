@@ -1,6 +1,7 @@
 {
-  "activated": "مفعل",
-  "deactivated": "معطل",
+  "serverName": "اسم الخادم",
+  "serverMembers": "أعضاء الخادم",
+  "economyType": "نوع الاقتصاد",
   "userRemoveMoneyNotifyTitle": "تم خصم الأموال",
   "userRemoveMoneyNotifyContent": "قام المستخدم {user} بخصم {amount} <:blackToken:1304186797064065065> من حسابك.",
   "userDeletedNotifyTitle": "تم حذف حسابك",

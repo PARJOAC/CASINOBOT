@@ -1,6 +1,7 @@
 {
-  "activated": "有効化されました",
-  "deactivated": "無効化されました",
+  "serverName": "サーバー名",
+  "serverMembers": "サーバーメンバー",
+  "economyType": "経済タイプ",
   "userRemoveMoneyNotifyTitle": "お金が削除されました",
   "userRemoveMoneyNotifyContent": "ユーザー {user} があなたのアカウントから {amount} <:blackToken:1304186797064065065> を削除しました。",
   "userDeletedNotifyTitle": "あなたのアカウントが削除されました",

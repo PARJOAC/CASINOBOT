@@ -1,6 +1,7 @@
 {
-  "activated": "सक्रिय किया गया",
-  "deactivated": "निष्क्रिय किया गया",
+  "serverName": "सर्वर का नाम",
+  "serverMembers": "सर्वर सदस्य",
+  "economyType": "अर्थव्यवस्था प्रकार",
   "userRemoveMoneyNotifyTitle": "पैसे हटाए गए",
   "userRemoveMoneyNotifyContent": "उपयोगकर्ता {user} ने आपके खाते से {amount} <:blackToken:1304186797064065065> हटा दिए हैं।",
   "userDeletedNotifyTitle": "आपका खाता हटा दिया गया है",

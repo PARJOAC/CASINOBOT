@@ -1,6 +1,7 @@
 {
-  "activated": "Активировано",
-  "deactivated": "Деактивировано",
+  "serverName": "Название сервера",
+  "serverMembers": "Участники сервера",
+  "economyType": "Тип экономики",
   "userRemoveMoneyNotifyTitle": "Деньги удалены",
   "userRemoveMoneyNotifyContent": "Пользователь {user} удалил {amount} <:blackToken:1304186797064065065> с вашего аккаунта.",
   "userDeletedNotifyTitle": "Ваш аккаунт был удалён",
