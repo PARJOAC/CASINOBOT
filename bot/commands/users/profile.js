@@ -98,7 +98,8 @@ module.exports = {
             { name: lang.lastSlots, value: `${getDate(playerData.lastSlot, lang)}`, inline: true }
           ],
           footer: client.user.username,
-          ephemeral: false
+          ephemeral: false,
+          components: [row]
         });
       };
     });

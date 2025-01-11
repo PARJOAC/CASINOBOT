@@ -81,16 +81,17 @@ module.exports = {
             );
         });
 
-        await blueEmbed(interaction, client, {
+        
+
+        const message = await blueEmbed(interaction, client, {
             type: "editReply",
             title: lang.helpWelcome.title,
             description: lang.helpWelcome.description,
             footer: client.user.username,
             ephemeral: false,
-            components: [row]
+            components: [row],
+            fetchReply: true
         });
-
-        const message = await interaction.fetchReply();
 
         const collector = message.createMessageComponentCollector({ time: 120000 });
 
@@ -106,7 +107,7 @@ module.exports = {
         });
 
         collector.on("end", () => {
-            message.edit({ components: [] });
+            message.editReply({ components: [] });
         });
 
     },

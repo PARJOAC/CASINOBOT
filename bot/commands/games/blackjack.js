@@ -106,7 +106,8 @@ module.exports = {
       ],
       footer: client.user.username,
       ephemeral: false,
-      components: [actionRow]
+      components: [actionRow],
+      fetchReply: true
     });
 
     const filter = (i) => i.user.id === interaction.user.id;

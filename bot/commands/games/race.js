@@ -59,7 +59,8 @@ module.exports = {
       title: lang.horseStartingTitle,
       description: lang.horseStartingContent,
       footer: client.user.username,
-      ephemeral: false
+      ephemeral: false,
+      fetchReply: true
     });
 
     setTimeout(async () => {

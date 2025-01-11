@@ -49,7 +49,7 @@ module.exports = {
       footer: client.user.username,
       ephemeral: false,
       components: [row],
-      fechReply: true
+      fetchReply: true
     });
 
     const filter = (buttonInteraction) => {

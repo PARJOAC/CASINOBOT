@@ -45,7 +45,7 @@ module.exports = {
             footer: client.user.username,
             ephemeral: false,
             components: [generateButtons()],
-            fetchReply: true,
+            fetchReply: true
         });
 
         const collector = message.createMessageComponentCollector({

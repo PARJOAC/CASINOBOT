@@ -108,7 +108,8 @@ module.exports = {
       title: lang.rouletteSpiningTitle,
       description: lang.rouletteSpiningContent,
       footer: client.user.username,
-      ephemeral: false
+      ephemeral: false,
+      fetchReply: true
     });
 
     setTimeout(async () => {

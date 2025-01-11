@@ -2,6 +2,7 @@ const { delSet } = require("./getSet");
 const { greenEmbed, blueEmbed, redEmbed, yellowEmbed } = require("./interactionEmbed");
 const { wonItem } = require("./wonItem");
 const { winExperience } = require("./winExperience");
+const { wonGame } = require("./wonGame");
 
 async function initInfo(interaction, processChannel, client) {
     if (processChannel === "LOG_GAMES_CHANNEL_ID") delSet(interaction.user.id);
@@ -20,9 +21,10 @@ async function initInfo(interaction, processChannel, client) {
 
 async function logEmbedWin(betAmount, playerData, won, interaction, client, lang) {
     const info = await initInfo(interaction, "LOG_GAMES_CHANNEL_ID", client, lang);
+    await wonGame(playerData, won, interaction, lang, client);
     //await wonItem(playerData, interaction, lang, client);
     await winExperience(playerData, won);
-    playerData.balance += won;
+    
     playerData.save();
 
     greenEmbed(info.logChannel, client, {

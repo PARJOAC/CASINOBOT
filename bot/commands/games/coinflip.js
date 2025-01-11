@@ -48,7 +48,8 @@ module.exports = {
             type: "editReply",
             title: lang.flipCoin,
             footer: client.user.username,
-            ephemeral: false
+            ephemeral: false,
+            fetchReply: true
         });
 
         if (isWin) {
