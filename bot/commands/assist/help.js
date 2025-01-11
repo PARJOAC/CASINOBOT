@@ -107,7 +107,7 @@ module.exports = {
         });
 
         collector.on("end", () => {
-            message.editReply({ components: [] });
+            interaction.editReply({ components: [] });
         });
 
     },
