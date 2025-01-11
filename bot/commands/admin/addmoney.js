@@ -64,7 +64,7 @@ module.exports = {
 
     await greenEmbed(interaction, client, {
       type: "editReply",
-      title: lang.succesfulAddMoneyTitle,
+      title: lang.succesfulTitle,
       description: lang.succesfulAddMoneyContent
         .replace("{amount}", amount.toLocaleString())
         .replace("{user}", user.username),

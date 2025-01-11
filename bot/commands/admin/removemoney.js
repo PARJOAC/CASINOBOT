@@ -83,7 +83,7 @@ module.exports = {
 
     await greenEmbed(interaction, client, {
       type: "editReply",
-      title: lang.successTitle,
+      title: lang.succesfulTitle,
       description: lang.succesfulRemoveMoney
         .replace("{amount}", amount.toLocaleString())
         .replace("{user}", targetUser.username),
