@@ -20,6 +20,12 @@ module.exports = {
         .setDescription("Amount of money to add")
         .setRequired(true)
     )
+    .addStringOption(option =>
+      option
+        .setName("reason")
+        .setDescription("Reason for adding money")
+        .setRequired(false)
+    )
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
   category: "admin",
   admin: false,
@@ -67,10 +73,14 @@ module.exports = {
     });
 
     try {
+      const reason = interaction.options.getString("reason") || lang.noReason;
       await greenEmbed(interaction, client, {
         type: "userSend",
-        title: "The creator has sent you a gift!",
-        description: `You have received an amount of **${amount.toLocaleString()} <:blackToken:1304186797064065065>** as compensation for using casinobot, thank you very much and good game!`,
+        title: lang.userMessageAddMoneyTitle.replace("{user}", interaction.user.username),
+        description: lang.userMessageAddMoneyContent.replace("{amount}", amount.toLocaleString()),
+        fields: [
+          { name: lang.reason, value: reason, inline: false }
+        ],
         footer: client.user.username
       });
     } catch {

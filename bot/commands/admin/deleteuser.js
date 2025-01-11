@@ -15,6 +15,12 @@ module.exports = {
         .setDescription("Select the user to delete from the database")
         .setRequired(true)
     )
+    .addStringOption((option) =>
+      option
+        .setName("reason")
+        .setDescription("Reason for deleting the user")
+        .setRequired(false)
+    )
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
   category: "admin",
   admin: false,
@@ -53,16 +59,38 @@ module.exports = {
         ephemeral: false
       });
 
+    const reason = interaction.options.getUser("reason");
+
     check.guildData.economyType ? await PlayerGuild.deleteOne({ userId: targetUser.id }) : await Player.deleteOne({ userId: targetUser.id });
 
-    return greenEmbed(interaction, client, {
+    await greenEmbed(interaction, client, {
       type: "editReply",
       title: lang.succesfulTitle,
-      description: lang.succesfulDeletedUserContent
-        .replace("{user}", targetUser.id),
+      description: lang.succesfulDeletedUserContent.replace("{user}", targetUser.id),
       footer: client.user.username,
       ephemeral: false
     });
+
+    try {
+      const reason = interaction.options.getString("reason") || lang.noReason;
+      await greenEmbed(interaction, client, {
+        type: "userSend",
+        title: lang.userDeletedNotifyTitle,
+        description: lang.userMessageAddMoneyContent.replace("{user}", interaction.user.username),
+        fields: [
+          { name: lang.reason, value: reason, inline: false }
+        ],
+        footer: client.user.username
+      });
+    } catch {
+      return redEmbed(interaction, client, {
+        type: "followUp",
+        title: lang.errorTitle,
+        description: lang.dmDisabled,
+        footer: client.user.username,
+        ephemeral: true
+      });
+    };
 
   },
 };

@@ -75,7 +75,7 @@ module.exports = {
     playerData.balance -= amount;
     await playerData.save();
 
-    return greenEmbed(interaction, client, {
+    await greenEmbed(interaction, client, {
       type: "editReply",
       title: lang.successTitle,
       description: lang.succesfulRemoveMoney
@@ -84,6 +84,27 @@ module.exports = {
       footer: client.user.username,
       ephemeral: false
     });
+
+    try {
+      const reason = interaction.options.getString("reason") || lang.noReason;
+      await greenEmbed(interaction, client, {
+        type: "userSend",
+        title: lang.userRemoveMoneyNotifyTitle,
+        description: lang.userRemoveMoneyNotifyContent.replace("{user}", interaction.user.username).replace("{amount}", amount.toLocaleString()),
+        fields: [
+          { name: lang.reason, value: reason, inline: false }
+        ],
+        footer: client.user.username
+      });
+    } catch {
+      return redEmbed(interaction, client, {
+        type: "followUp",
+        title: lang.errorTitle,
+        description: lang.dmDisabled,
+        footer: client.user.username,
+        ephemeral: true
+      });
+    };
 
   },
 };

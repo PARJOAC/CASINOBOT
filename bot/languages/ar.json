@@ -1,4 +1,14 @@
 {
+  "activated": "مفعل",
+  "deactivated": "معطل",
+  "userRemoveMoneyNotifyTitle": "تم خصم الأموال",
+  "userRemoveMoneyNotifyContent": "قام المستخدم {user} بخصم {amount} <:blackToken:1304186797064065065> من حسابك.",
+  "userDeletedNotifyTitle": "تم حذف حسابك",
+  "userDeletedNotifyContent": "تم حذف حسابك بواسطة {user}",
+  "reason": "السبب",
+  "noReason": "لم يتم تقديم سبب",
+  "userMessageAddMoneyTitle": "{user} أرسل لك هدية!",
+  "userMessageAddMoneyContent": "لقد استلمت مبلغًا قدره **{amount}** <:blackToken:1304186797064065065>",
   "modifyProfileError": "لم تقم بتعديل أي شيء للمستخدم {user}",
   "modifyProfileContent": "الملف الشخصي للمستخدم {user} يبدو الآن هكذا:",
   "errorBikeSellContent": "ليس لديك دراجات كافية. لديك فقط {bike}.",
@@ -57,7 +67,7 @@
   "suggestSuccess": "✅ تم إرسال اقتراحك بنجاح!",
   "negativeItem": "يجب أن يكون العنصر أكبر من 0.",
   "buyItemTitle": "🛒 عناصر المتجر 🛒",
-  "invalidItemSelect": "❌ العنصر المحدد غير صالح.",
+  "invalidItemSelect": "العنصر المحدد غير صالح.",
   "errorNotEnoughMoneyToBuyContent": "ليس لديك ما يكفي من المال لشراء هذا العنصر.",
   "purchaseSucContent": "اشتريت {amount} {item} مقابل {totalCost} <:blackToken:1304186797064065065>.",
   "cooldownActiveTitle": "⏳ أنت في فترة تهدئة!",
