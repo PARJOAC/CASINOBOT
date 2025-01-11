@@ -79,6 +79,7 @@ module.exports = {
         title: lang.userMessageAddMoneyTitle.replace("{user}", interaction.user.username),
         description: lang.userMessageAddMoneyContent.replace("{amount}", amount.toLocaleString()),
         fields: [
+          { name: lang.serverName, value: interaction.guild.name, inline: false },
           { name: lang.reason, value: reason, inline: false }
         ],
         footer: client.user.username

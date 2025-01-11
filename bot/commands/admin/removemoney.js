@@ -92,6 +92,7 @@ module.exports = {
         title: lang.userRemoveMoneyNotifyTitle,
         description: lang.userRemoveMoneyNotifyContent.replace("{user}", interaction.user.username).replace("{amount}", amount.toLocaleString()),
         fields: [
+          { name: lang.serverName, value: interaction.guild.name, inline: false },
           { name: lang.reason, value: reason, inline: false }
         ],
         footer: client.user.username

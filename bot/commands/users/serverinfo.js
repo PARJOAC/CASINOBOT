@@ -7,9 +7,9 @@ module.exports = {
         .setName("serverinfo")
         .setDescription("Get information about the server and CasinoBot")
         .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
-    category: "admin",
+    category: "users",
     admin: false,
-    commandId: "1296240894214934529",
+    commandId: "1327698840530325619",
     async execute(interaction, client, lang) {
         const guildData = await Guild.findOne({ guildId: interaction.guild.id });
 
@@ -17,9 +17,9 @@ module.exports = {
             type: "editReply",
             title: lang.serverInfoTitle,
             fields: [
-                { name: lang.serverName, value: interaction.guild.name, inline: true },
-                { name: lang.serverMembers, value: interaction.guild.memberCount, inline: true },
-                { name: lang.economyType, value: guildData.economyType ? lang.local : lang.global, inline: true }
+                { name: lang.serverName, value: interaction.guild.name, inline: false },
+                { name: lang.serverMembers, value: `${interaction.guild.memberCount}`, inline: false },
+                { name: lang.economyType, value: guildData.economyType ? lang.local : lang.global, inline: false }
             ],
             thumbnail: interaction.guild.iconURL({ dynamic: true }),
             footer: client.user.username,
