@@ -1,4 +1,6 @@
 {
+  "disabledCommands": "الأوامر المعطلة",
+  "noDisabledCommands": "لا توجد أوامر معطلة",
   "logChannelSet": "تم تعيين قناة السجل إلى <#{channel}>.",
   "noChannelSelected": "لم تقم بتحديد أي قناة صالحة.",
   "next": "➡️ التالي",

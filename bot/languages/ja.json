@@ -1,4 +1,6 @@
 {
+  "disabledCommands": "無効なコマンド",
+  "noDisabledCommands": "無効なコマンドはありません",
   "logChannelSet": "ログチャンネルが <#{channel}> に設定されました。",
   "noChannelSelected": "有効なチャンネルを選択していません。",
   "next": "➡️ 次へ",

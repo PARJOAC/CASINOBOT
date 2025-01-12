@@ -1,4 +1,6 @@
 {
+  "disabledCommands": "Wyłączone komendy",
+  "noDisabledCommands": "Brak wyłączonych komend",
   "logChannelSet": "Kanał dziennika ustawiony na <#{channel}>.",
   "noChannelSelected": "Nie wybrano żadnego ważnego kanału.",
   "next": "➡️ Następny",

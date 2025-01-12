@@ -1,4 +1,6 @@
 {
+  "disabledCommands": "Commandes désactivées",
+  "noDisabledCommands": "Aucune commande désactivée",
   "logChannelSet": "Canal de journal défini sur <#{channel}>.",
   "noChannelSelected": "Vous n'avez sélectionné aucun canal valide.",
   "next": "➡️ Suivant",

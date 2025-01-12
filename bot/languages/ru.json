@@ -1,4 +1,6 @@
 {
+  "disabledCommands": "Отключенные команды",
+  "noDisabledCommands": "Нет отключенных команд",
   "logChannelSet": "Канал журнала установлен на <#{channel}>.",
   "noChannelSelected": "Вы не выбрали действительный канал.",
   "next": "➡️ Далее",

@@ -1,4 +1,6 @@
 {
+  "disabledCommands": "Deaktivierte Befehle",
+  "noDisabledCommands": "Es gibt keine deaktivierten Befehle",
   "logChannelSet": "Log-Kanal auf <#{channel}> gesetzt.",
   "noChannelSelected": "Du hast keinen gültigen Kanal ausgewählt.",
   "next": "➡️ Weiter",

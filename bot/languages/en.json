@@ -1,4 +1,6 @@
 {
+  "disabledCommands": "Disabled Commands",
+  "noDisabledCommands": "There are no disabled commands",
   "logChannelSet": "Log channel set to <#{channel}>.",
   "noChannelSelected": "You have not selected any valid channel",
   "next": "➡️ Next",

@@ -33,6 +33,8 @@ module.exports = {
         status.statusBot = !status.statusBot;
         await status.save();
 
+        let maintenanceChannel = await client.channels.fetch(process.env.MAINTENANCE_CHANNEL_ID);
+
         if (maintenanceChannel && maintenanceChannel.isTextBased())
             await yellowEmbed(process.env.MAINTENANCE_CHANNEL_ID, client, {
                 title: status.statusBot ? "⚠️ Bot Maintenance Activated" : "✅ Bot Maintenance Deactivated",

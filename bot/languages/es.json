@@ -1,4 +1,6 @@
 {
+  "disabledCommands": "Comandos deshabilitados",
+  "noDisabledCommands": "No hay comandos deshabilitados",
   "logChannelSet": "Canal de registro establecido en <#{channel}>.",
   "noChannelSelected": "No has seleccionado ningún canal válido.",
   "next": "➡️ Siguiente",

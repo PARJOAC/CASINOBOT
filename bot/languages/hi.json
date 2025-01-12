@@ -1,4 +1,6 @@
 {
+  "disabledCommands": "अक्षम आदेश",
+  "noDisabledCommands": "कोई निष्क्रिय आदेश नहीं हैं",
   "logChannelSet": "लॉग चैनल <#{channel}> पर सेट किया गया।",
   "noChannelSelected": "आपने कोई वैध चैनल नहीं चुना है।",
   "next": "➡️ अगला",
