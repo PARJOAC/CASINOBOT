@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, PermissionFlagsBits } = require("discord.js");
+const { SlashCommandBuilder, PermissionFlagsBits, EmbedBuilder } = require("discord.js");
 const Player = require("../../../mongoDB/Player");
 const { playerGuild } = require("../../../mongoDB/GuildPlayer");
 const { redEmbed, greenEmbed } = require("../../functions/interactionEmbed");
@@ -73,16 +73,19 @@ module.exports = {
 
     try {
       const reason = interaction.options.getString("reason") || lang.noReason;
-      await greenEmbed(interaction, client, {
-        type: "userSend",
-        title: lang.userDeletedNotifyTitle,
-        description: lang.userDeletedNotifyContent.replace("{user}", interaction.user.username),
-        fields: [
+
+      const embed = new EmbedBuilder()
+        .setColor(parseInt(process.env.GREEN_COLOR))
+        .setTitle(lang.userDeletedNotifyTitle)
+        .setDescription(lang.userDeletedNotifyContent.replace("{user}", interaction.user.username))
+        .addFields(
           { name: lang.serverName, value: interaction.guild.name, inline: false },
           { name: lang.reason, value: reason, inline: false }
-        ],
-        footer: client.user.username
-      });
+        )
+        .setFooter({ text: client.user.username, iconURL: client.user.displayAvatarURL() })
+        .setTimestamp();
+
+      await user.send({ embeds: [embed] });
     } catch {
       return redEmbed(interaction, client, {
         type: "followUp",

@@ -15,7 +15,7 @@ module.exports = {
             fields: [
                 {
                     name: "🐛 Bug Fixes",
-                    value: "\n- Crime command give millions coins.\n- Bot optimization (less lag)\n- In the profile command, in the section of the last times played, the buttons did not exist\n- When you won an item, it was duplicated to what you already had.\n- Correction of messages to make them more readable",
+                    value: "\n- Crime command give millions coins.\n- Bot optimization (less lag)\n- In the profile command, in the section of the last times played, the buttons did not exist\n- When you won an item, it was duplicated to what you already had.\n- Correction of messages to make them more readable\n- When you added, removed money, or deleted an account, the message was sent to the person executing the command instead of the end user.",
                     inline: false,
                 },
                 {

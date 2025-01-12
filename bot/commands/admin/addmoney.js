@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, PermissionFlagsBits } = require("discord.js");
+const { SlashCommandBuilder, PermissionFlagsBits, EmbedBuilder } = require("discord.js");
 const { getDataUser } = require("../../functions/getDataUser");
 const { redEmbed, greenEmbed } = require("../../functions/interactionEmbed");
 const { getSetUser } = require("../../functions/getSet");
@@ -74,16 +74,19 @@ module.exports = {
 
     try {
       const reason = interaction.options.getString("reason") || lang.noReason;
-      await greenEmbed(interaction, client, {
-        type: "userSend",
-        title: lang.userMessageAddMoneyTitle.replace("{user}", interaction.user.username),
-        description: lang.userMessageAddMoneyContent.replace("{amount}", amount.toLocaleString()),
-        fields: [
+
+      const embed = new EmbedBuilder()
+        .setColor(parseInt(process.env.GREEN_COLOR))
+        .setTitle(lang.userMessageAddMoneyTitle.replace("{user}", interaction.user.username))
+        .setDescription(lang.userMessageAddMoneyContent.replace("{amount}", amount.toLocaleString()))
+        .addFields(
           { name: lang.serverName, value: interaction.guild.name, inline: false },
           { name: lang.reason, value: reason, inline: false }
-        ],
-        footer: client.user.username
-      });
+        )
+        .setFooter({ text: client.user.username, iconURL: client.user.displayAvatarURL() })
+        .setTimestamp();
+
+      await user.send({ embeds: [embed] });
     } catch {
       return redEmbed(interaction, client, {
         type: "followUp",
