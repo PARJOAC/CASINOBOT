@@ -75,7 +75,7 @@ module.exports = {
       const reason = interaction.options.getString("reason") || lang.noReason;
 
       const embed = new EmbedBuilder()
-        .setColor(parseInt(process.env.GREEN_COLOR))
+        .setColor(parseInt(process.env.GREEN_COLOR, 16))
         .setTitle(lang.userDeletedNotifyTitle)
         .setDescription(lang.userDeletedNotifyContent.replace("{user}", interaction.user.username))
         .addFields(
