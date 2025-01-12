@@ -17,7 +17,7 @@ module.exports = {
         .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
     category: "admin",
     admin: false,
-    commandId: "1296240894214934528",
+    commandId: "1328060955309117521",
     async execute(interaction, client, lang) {
         let guildData = await Guild.findOne({ guildId: interaction.guild.id });
         if (interaction.user.id !== interaction.guild.ownerId)
