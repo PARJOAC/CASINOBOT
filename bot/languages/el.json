@@ -1,4 +1,15 @@
 {
+  "logChannelSet": "Ο κανάλι καταγραφής ρυθμίστηκε σε <#{channel}>.",
+  "noChannelSelected": "Δεν επιλέξατε κανένα έγκυρο κανάλι.",
+  "next": "➡️ Επόμενο",
+  "previous": "⬅️ Προηγούμενο",
+  "selectedCommand": "Επιλέξτε μια εντολή",
+  "enabled": "🟢 Ενεργοποιημένο",
+  "disabled": "🔴 Απενεργοποιημένο",
+  "totalPages": "Σελίδα **{page}** από **{totalPages}**",
+  "availableCommands": "📜 Διαθέσιμες Εντολές",
+  "noDescription": "Δεν παρέχεται περιγραφή.",
+  "commandDisabled": "Η εντολή ``{command}`` είναι αυτή τη στιγμή απενεργοποιημένη σε αυτόν τον διακομιστή.",
   "serverName": "Όνομα διακομιστή",
   "serverMembers": "Μέλη διακομιστή",
   "economyType": "Τύπος οικονομίας",
@@ -300,6 +311,10 @@
     "serverinfo": {
       "name": "serverinfo",
       "description": "📊 Λάβετε πληροφορίες για τον διακομιστή και το CasinoBot"
+    },
+    "setcommand": {
+      "name": "setcommand",
+      "description": "⚙️ Προσθήκη/Αφαίρεση εντολής στον διακομιστή"
     }
   },
   "categories": {

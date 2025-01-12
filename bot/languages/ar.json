@@ -1,4 +1,15 @@
 {
+  "logChannelSet": "تم تعيين قناة السجل إلى <#{channel}>.",
+  "noChannelSelected": "لم تقم بتحديد أي قناة صالحة.",
+  "next": "➡️ التالي",
+  "previous": "⬅️ السابق",
+  "selectedCommand": "حدد أمرًا",
+  "enabled": "🟢 مفعل",
+  "disabled": "🔴 معطل",
+  "totalPages": "الصفحة **{page}** من **{totalPages}**",
+  "availableCommands": "📜 الأوامر المتاحة",
+  "noDescription": "لا توجد وصف مقدم.",
+  "commandDisabled": "الأمر ``{command}`` معطل حاليًا في هذا الخادم.",
   "serverName": "اسم الخادم",
   "serverMembers": "أعضاء الخادم",
   "economyType": "نوع الاقتصاد",
@@ -296,6 +307,10 @@
     "serverinfo": {
       "name": "serverinfo",
       "description": "📊 احصل على معلومات حول الخادم و CasinoBot"
+    },
+    "setcommand": {
+      "name": "setcommand",
+      "description": "⚙️ إضافة/إزالة الأمر من الخادم"
     }
   },
   "categories": {

@@ -81,8 +81,6 @@ module.exports = {
             );
         });
 
-        
-
         const message = await blueEmbed(interaction, client, {
             type: "editReply",
             title: lang.helpWelcome.title,

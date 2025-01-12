@@ -10,7 +10,7 @@ module.exports = {
     async execute(interaction, client) {
         return blueEmbed(interaction, client, {
             type: "editReply",
-            title: "Version 2.3.4 released! 11/01/2025 (DD/MM/YYYY)",
+            title: "Version 2.4.1 released! 12/01/2025 (DD/MM/YYYY)",
             description: `Thank you for gambling with <@${client.user.id}>!\nThis version includes the following:\n`,
             fields: [
                 {
@@ -25,7 +25,7 @@ module.exports = {
                 },
                 {
                     name: "🆕 New",
-                    value: "- /crime command added.\n- /seteconomy added.\n- Greek Language added.\n- The /profile command messages have been changed for better user readability.\n- /serverinfo added to view server information\n- Improvements to administration commands",
+                    value: "- /crime command added.\n- /seteconomy added.\n- Greek Language added.\n- The /profile command messages have been changed for better user readability.\n- /serverinfo added to view server information\n- Improvements to administration commands\n- New /setcommand added to Add/Remove commands con servers",
                     inline: false,
                 },
                 {

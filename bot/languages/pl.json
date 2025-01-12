@@ -1,4 +1,15 @@
 {
+  "logChannelSet": "Kanał dziennika ustawiony na <#{channel}>.",
+  "noChannelSelected": "Nie wybrano żadnego ważnego kanału.",
+  "next": "➡️ Następny",
+  "previous": "⬅️ Poprzedni",
+  "selectedCommand": "Wybierz polecenie",
+  "enabled": "🟢 Włączony",
+  "disabled": "🔴 Wyłączony",
+  "totalPages": "Strona **{page}** z **{totalPages}**",
+  "availableCommands": "📜 Dostępne polecenia",
+  "noDescription": "Brak opisu.",
+  "commandDisabled": "Polecenie ``{command}`` jest obecnie wyłączone na tym serwerze.",
   "serverName": "Nazwa serwera",
   "serverMembers": "Członkowie serwera",
   "economyType": "Typ ekonomii",
@@ -300,6 +311,10 @@
     "serverinfo": {
       "name": "serverinfo",
       "description": "📊 Uzyskaj informacje o serwerze i CasinoBot"
+    },
+    "setcommand": {
+      "name": "setcommand",
+      "description": "⚙️ Dodaj/Usuń polecenie na serwerze"
     }
   },
   "categories": {

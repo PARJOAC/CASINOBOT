@@ -1,4 +1,15 @@
 {
+  "logChannelSet": "Canale di log impostato su <#{channel}>.",
+  "noChannelSelected": "Non hai selezionato alcun canale valido.",
+  "next": "➡️ Successivo",
+  "previous": "⬅️ Precedente",
+  "selectedCommand": "Seleziona un comando",
+  "enabled": "🟢 Abilitato",
+  "disabled": "🔴 Disabilitato",
+  "totalPages": "Pagina **{page}** di **{totalPages}**",
+  "availableCommands": "📜 Comandi disponibili",
+  "noDescription": "Nessuna descrizione fornita.",
+  "commandDisabled": "Il comando ``{command}`` è attualmente disabilitato su questo server.",
   "serverName": "Nome del server",
   "serverMembers": "Membri del server",
   "economyType": "Tipo di economia",
@@ -300,6 +311,10 @@
     "serverinfo": {
       "name": "serverinfo",
       "description": "📊 Ottieni informazioni sul server e su CasinoBot"
+    },
+    "setcommand": {
+      "name": "setcommand",
+      "description": "⚙️ Aggiungere/Rimuovere comando sul server"
     }
   },
   "categories": {

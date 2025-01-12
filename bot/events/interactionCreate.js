@@ -5,6 +5,7 @@ const { getDataUser } = require("../functions/getDataUser");
 const { redEmbed } = require("../functions/interactionEmbed");
 const { delSet } = require("../functions/getSet");
 const Status = require("../../mongoDB/Status");
+const Guild = require("../../mongoDB/Guild");
 
 module.exports = {
     name: Events.InteractionCreate,
@@ -92,6 +93,16 @@ module.exports = {
                 ephemeral: true
             });
         };
+
+        let guildData = await Guild.findOne({ guildId: interaction.guild.id });
+        if (guildData && guildData.commandsNotUsed.includes(interaction.commandName))
+            return redEmbed(interaction, client, {
+                type: "reply",
+                title: lang.errorTitle,
+                description: lang.commandDisabled.replace("{command}", interaction.commandName),
+                footer: client.user.username,
+                ephemeral: true
+            });
 
         let playerData = await getDataUser(interaction.user.id, interaction.guild.id);
 

@@ -1,5 +1,5 @@
 const { EmbedBuilder } = require("discord.js");
-
+const Guild = require("../../mongoDB/Guild");
 async function interactionEmbed({ title, description, fields = [], thumbnail, footer, color, client }) {
     if (!client) throw new Error('Client instance is required for interactionEmbed.');
 
@@ -101,10 +101,10 @@ async function sendEmbed(interaction, client, { type, title, description, fields
 
         if (!channel || !channel.isTextBased()) {
             throw new Error(`El canal con ID ${interaction} no es válido o no es basado en texto.`);
-        };
+        }
 
         return channel.send({ embeds: [embed], components: components });
-    };
+    }
 
     const method = methods[type];
     if (!method) throw new Error(`Invalid method on sendEmbed: ${type}`);

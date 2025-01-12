@@ -1,4 +1,15 @@
 {
+  "logChannelSet": "ログチャンネルが <#{channel}> に設定されました。",
+  "noChannelSelected": "有効なチャンネルを選択していません。",
+  "next": "➡️ 次へ",
+  "previous": "⬅️ 前へ",
+  "selectedCommand": "コマンドを選択してください",
+  "enabled": "🟢 有効",
+  "disabled": "🔴 無効",
+  "totalPages": "ページ **{page}** / **{totalPages}**",
+  "availableCommands": "📜 利用可能なコマンド",
+  "noDescription": "説明は提供されていません。",
+  "commandDisabled": "コマンド ``{command}`` は現在このサーバーで無効です。",
   "serverName": "サーバー名",
   "serverMembers": "サーバーメンバー",
   "economyType": "経済タイプ",
@@ -300,6 +311,10 @@
     "serverinfo": {
       "name": "serverinfo",
       "description": "📊 サーバーとCasinoBotの情報を取得する"
+    },
+    "setcommand": {
+      "name": "setcommand",
+      "description": "⚙️ サーバーでコマンドを追加/削除"
     }
   },
   "categories": {

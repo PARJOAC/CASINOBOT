@@ -1,2 +1,14 @@
 [
+  {
+    "type": "uncaughtException",
+    "timestamp": "12/1/2025, 18:49:18",
+    "message": "FFmpeg/avconv not found!",
+    "stack": "Error: FFmpeg/avconv not found!\n    at FFmpeg.getInfo (C:\\Users\\pablo\\Desktop\\CASINOBOT\\node_modules\\prism-media\\src\\core\\FFmpeg.js:143:11)\n    at FFmpeg.create (C:\\Users\\pablo\\Desktop\\CASINOBOT\\node_modules\\prism-media\\src\\core\\FFmpeg.js:156:38)\n    at new FFmpeg (C:\\Users\\pablo\\Desktop\\CASINOBOT\\node_modules\\prism-media\\src\\core\\FFmpeg.js:45:27)\n    at Object.transformer (C:\\Users\\pablo\\Desktop\\CASINOBOT\\node_modules\\@discordjs\\voice\\dist\\index.js:2257:52)\n    at C:\\Users\\pablo\\Desktop\\CASINOBOT\\node_modules\\@discordjs\\voice\\dist\\index.js:2462:58\n    at Array.map (<anonymous>)\n    at createAudioResource (C:\\Users\\pablo\\Desktop\\CASINOBOT\\node_modules\\@discordjs\\voice\\dist\\index.js:2462:39)\n    at createNewResource (C:\\Users\\pablo\\Desktop\\CASINOBOT\\bot\\events\\ready.js:24:37)\n    at playAudio (C:\\Users\\pablo\\Desktop\\CASINOBOT\\bot\\events\\ready.js:28:26)\n    at Object.execute (C:\\Users\\pablo\\Desktop\\CASINOBOT\\bot\\events\\ready.js:43:5)"
+  },
+  {
+    "type": "unhandledRejection",
+    "timestamp": "12/1/2025, 18:49:35",
+    "message": "Unknown interaction",
+    "stack": "DiscordAPIError[10062]: Unknown interaction\n    at handleErrors (C:\\Users\\pablo\\Desktop\\CASINOBOT\\node_modules\\@discordjs\\rest\\dist\\index.js:727:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async BurstHandler.runRequest (C:\\Users\\pablo\\Desktop\\CASINOBOT\\node_modules\\@discordjs\\rest\\dist\\index.js:831:23)\n    at async _REST.request (C:\\Users\\pablo\\Desktop\\CASINOBOT\\node_modules\\@discordjs\\rest\\dist\\index.js:1272:22)\n    at async ButtonInteraction.update (C:\\Users\\pablo\\Desktop\\CASINOBOT\\node_modules\\discord.js\\src\\structures\\interfaces\\InteractionResponses.js:237:5)\n    at async InteractionCollector.<anonymous> (C:\\Users\\pablo\\Desktop\\CASINOBOT\\bot\\commands\\admin\\setcommand.js:118:17)"
+  }
 ]

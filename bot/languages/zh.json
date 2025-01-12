@@ -1,4 +1,15 @@
 {
+  "logChannelSet": "日志频道已设置为 <#{channel}>。",
+  "noChannelSelected": "您没有选择任何有效的频道。",
+  "next": "➡️ 下一页",
+  "previous": "⬅️ 上一页",
+  "selectedCommand": "选择一个命令",
+  "enabled": "🟢 已启用",
+  "disabled": "🔴 已禁用",
+  "totalPages": "第 **{page}** 页，共 **{totalPages}** 页",
+  "availableCommands": "📜 可用命令",
+  "noDescription": "没有提供描述。",
+  "commandDisabled": "命令 ``{command}`` 当前在此服务器上已禁用。",
   "serverName": "服务器名称",
   "serverMembers": "服务器成员",
   "economyType": "经济类型",
@@ -300,6 +311,10 @@
     "serverinfo": {
       "name": "serverinfo",
       "description": "📊 获取关于服务器和CasinoBot的信息"
+    },
+    "setcommand": {
+      "name": "setcommand",
+      "description": "⚙️ 添加/移除服务器命令"
     }
   },
   "categories": {

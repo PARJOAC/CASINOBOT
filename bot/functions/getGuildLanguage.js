@@ -8,8 +8,8 @@ async function getGuildLanguage(guildId) {
       guildId: guildId,
       lang: "en",
       economyType: false,
-      commandLogChannel: 0,
-      gameLogChannel: 0
+      logChannelId: null,
+      commandsNotUsed: []
     });
     await guildLang.save();
   };
@@ -26,8 +26,8 @@ async function changeLanguage(guildId, lang) {
       guildId: guildId,
       lang: lang,
       economyType: false,
-      commandLogChannel: 0,
-      gameLogChannel: 0
+      logChannelId: null,
+      commandsNotUsed: []
     });
     await guildLang.save();
   };

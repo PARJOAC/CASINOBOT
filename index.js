@@ -33,8 +33,8 @@ const SlashCommands = require("./initMain/handlerSlashCommands.js");
 async function main(client) {
     await Errors();
     await MongoDB();
-    await Events(client);
     await SlashCommands(client);
+    await Events(client);
     await client.login(process.env.BOT_TOKEN);
 }
 
