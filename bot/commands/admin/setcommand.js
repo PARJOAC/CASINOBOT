@@ -1,3 +1,4 @@
+// Import required modules from discord.js and custom functions
 const {
     SlashCommandBuilder,
     StringSelectMenuBuilder,
@@ -11,6 +12,7 @@ const Guild = require("../../../mongoDB/Guild");
 const { redEmbed } = require("../../functions/interactionEmbed");
 
 module.exports = {
+    // Define the slash command using SlashCommandBuilder
     data: new SlashCommandBuilder()
         .setName("setcommand")
         .setDescription("Add/Remove command on the server")
@@ -18,8 +20,13 @@ module.exports = {
     category: "admin",
     admin: false,
     commandId: "1328060955309117521",
+
+    // Execute function for the slash command
     async execute(interaction, client, lang) {
+        // Fetch guild data from the database
         let guildData = await Guild.findOne({ guildId: interaction.guild.id });
+
+        // Check if the user is the guild owner
         if (interaction.user.id !== interaction.guild.ownerId)
             return redEmbed(interaction, client, {
                 type: "editReply",
@@ -30,6 +37,7 @@ module.exports = {
                 ephemeral: false
             });
 
+        // Filter and map available commands
         const commands = client.commands
             .filter(
                 (command) =>
@@ -41,10 +49,12 @@ module.exports = {
                 value: command.data.name,
             }));
 
+        // Set up pagination
         const pageSize = 9;
         const totalPages = Math.ceil(commands.length / pageSize);
         let currentPage = 0;
 
+        // Function to get options for the current page
         const getPageOptions = (page) => commands
             .slice(page * pageSize, (page + 1) * pageSize)
             .map((cmd) => ({
@@ -53,6 +63,7 @@ module.exports = {
                 description: cmd.description,
             }));
 
+        // Function to create the embed for the current page
         const createEmbed = (page) => {
             const embed = new EmbedBuilder()
                 .setTitle(lang.availableCommands)
@@ -74,6 +85,7 @@ module.exports = {
             return embed;
         };
 
+        // Create the select menu
         const menu = new StringSelectMenuBuilder()
             .setCustomId("select-command")
             .setPlaceholder(lang.selectedCommand)
@@ -81,6 +93,7 @@ module.exports = {
 
         const rowMenu = new ActionRowBuilder().addComponents(menu);
 
+        // Create navigation buttons
         const rowButtons = new ActionRowBuilder().addComponents(
             new ButtonBuilder()
                 .setCustomId("previous-page")
@@ -94,20 +107,24 @@ module.exports = {
                 .setDisabled(currentPage === totalPages - 1)
         );
 
+        // Send the initial message with the embed and components
         await interaction.editReply({
             embeds: [createEmbed(currentPage)],
             components: [rowMenu, rowButtons],
             ephemeral: true,
         });
 
+        // Set up a collector for user interactions
         const filter = (i) => i.user.id === interaction.user.id;
         const collector = interaction.channel.createMessageComponentCollector({
             filter,
             time: 60000,
         });
 
+        // Handle collected interactions
         collector.on("collect", async (i) => {
             if (i.isButton()) {
+                // Handle pagination buttons
                 if (i.customId === "next-page") currentPage++;
                 else if (i.customId === "previous-page") currentPage--;
 
@@ -120,11 +137,13 @@ module.exports = {
                     components: [rowMenu, rowButtons],
                 });
             } else if (i.isStringSelectMenu()) {
+                // Handle command selection
                 await i.deferUpdate();
 
                 const selectedCommand = i.values[0];
                 const commandsNotUsed = guildData.commandsNotUsed;
 
+                // Toggle command usage status
                 if (commandsNotUsed.includes(selectedCommand)) {
                     guildData.commandsNotUsed = commandsNotUsed.filter(command => command !== selectedCommand);
                 } else {
@@ -138,11 +157,10 @@ module.exports = {
                     embeds: [updatedEmbed],
                     components: [rowMenu, rowButtons],
                 });
-
-                
             }
         });
 
+        // Handle collector end
         collector.on("end", () => {
             interaction.editReply({ components: [] });
         });

@@ -1,7 +1,5 @@
 const { delSet } = require("./getSet");
 const { greenEmbed, blueEmbed, redEmbed, yellowEmbed } = require("./interactionEmbed");
-const { wonItem } = require("./wonItem");
-const { winExperience } = require("./winExperience");
 const { wonGame } = require("./wonGame");
 
 async function initInfo(interaction, processChannel, client) {

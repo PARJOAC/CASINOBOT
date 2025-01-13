@@ -1,25 +1,33 @@
+// Import required modules from discord.js and custom functions
 const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require("discord.js");
 const fs = require("fs");
 const path = require("path");
 const { blueEmbed } = require("../../functions/interactionEmbed");
 
 module.exports = {
+    // Define the slash command using SlashCommandBuilder
     data: new SlashCommandBuilder()
         .setName("help")
         .setDescription("Show available commands"),
     category: "assist",
     commandId: "1296240894306943039",
+
+    // Execute function for the slash command
     async execute(interaction, client, lang) {
 
+        // Read command folders from the commands directory
         const commandFolders = fs.readdirSync(path.join(__dirname, "..", "..", "commands"));
         const commandCategories = {};
 
+        // Iterate through each command folder
         for (const folder of commandFolders) {
+            // Read command files from each folder
             const commandFiles = fs
                 .readdirSync(path.join(__dirname, "..", "..", "commands", folder))
                 .filter((file) => file.endsWith(".js"));
 
             commandCategories[folder] = [];
+            // Process each command file
             for (const file of commandFiles) {
                 const command = require(path.join(
                     __dirname,
@@ -29,7 +37,9 @@ module.exports = {
                     folder,
                     file
                 ));
+                // Skip admin commands
                 if (command.admin) continue;
+                // Get command info from language file or use default values
                 const commandInfo = lang.commands[command.data.name];
                 commandCategories[folder].push({
                     name: commandInfo ? commandInfo.name : command.data.name,
@@ -41,13 +51,16 @@ module.exports = {
             };
         };
 
+        // Create embeds for each command category
         const categoryEmbeds = Object.entries(commandCategories).map(
             ([category, commands]) => {
+                // Create a list of commands for the category
                 const commandList =
                     commands
                         .map((command) => `</${command.name}:${command.commandId}> -> ${command.description}`)
                         .join("\n\n") || lang.noCommands;
 
+                // Define emoji mappings for categories
                 const categoryEmojiMap = {
                     admin: "⚙️",
                     assist: "❗",
@@ -56,6 +69,7 @@ module.exports = {
                     users: "👤",
                 };
 
+                // Create and return the embed for the category
                 return {
                     title: `${categoryEmojiMap[category] || "📜"} ${lang.categories[category] ||
                         category.charAt(0).toUpperCase() + category.slice(1)
@@ -66,9 +80,11 @@ module.exports = {
             }
         );
 
+        // Define category emojis for buttons
         const categoryEmojis = ["⚙️", "❗", "💰", "🎮", "👤"];
         const row = new ActionRowBuilder();
 
+        // Create buttons for each category
         categoryEmojis.forEach((emoji, index) => {
             row.addComponents(
                 new ButtonBuilder()
@@ -81,6 +97,7 @@ module.exports = {
             );
         });
 
+        // Send the initial help message with buttons
         const message = await blueEmbed(interaction, client, {
             type: "editReply",
             title: lang.helpWelcome.title,
@@ -91,8 +108,10 @@ module.exports = {
             fetchReply: true
         });
 
+        // Create a collector for button interactions
         const collector = message.createMessageComponentCollector({ time: 120000 });
 
+        // Handle button clicks
         collector.on("collect", async (buttonInteraction) => {
             const index = parseInt(buttonInteraction.customId.split("_")[1]);
 
@@ -104,6 +123,7 @@ module.exports = {
             };
         });
 
+        // Remove buttons when the collector ends
         collector.on("end", () => {
             interaction.editReply({ components: [] });
         });
