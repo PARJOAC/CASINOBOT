@@ -5,7 +5,7 @@ module.exports = {
   name: Events.GuildDelete,
   async execute(guild, client) {
     if (!guild) return;
-    const guildChannel = process.env.LOG_CHANNEL_GUILD_ADD;
+    const guildChannel = process.env.LOG_CHANNEL_GUILD_DELETE;
 
     if (guildChannel) {
       return redEmbed(guildChannel, client, {
