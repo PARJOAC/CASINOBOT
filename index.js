@@ -1,3 +1,4 @@
+// Import required modules from discord.js
 const {
     Client,
     Collection,
@@ -5,6 +6,7 @@ const {
     GatewayIntentBits
 } = require("discord.js");
 
+// Create a new Discord client instance with specific configurations
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -21,21 +23,29 @@ const client = new Client({
     },
 });
 
+// Create a new Collection to store bot commands
 client.commands = new Collection();
 
+// Load environment variables from a .env file
 require("dotenv").config();
 
+// Import custom modules for error handling, MongoDB connection, event handling, and slash command handling
 const Errors = require("./initMain/handlerErrors.js");
 const MongoDB = require("./initMain/mongoDB.js");
 const Events = require("./initMain/handlerEvents.js");
 const SlashCommands = require("./initMain/handlerSlashCommands.js");
 
+/**
+ * Main function to initialize and start the bot
+ * @param {Client} client - The Discord client instance
+ */
 async function main(client) {
-    await Errors();
-    await MongoDB();
-    await SlashCommands(client);
-    await Events(client);
-    await client.login(process.env.BOT_TOKEN);
+    await Errors(); // Initialize error handling
+    await MongoDB(); // Connect to MongoDB
+    await SlashCommands(client); // Set up slash commands
+    await Events(client); // Set up event handlers
+    await client.login(process.env.BOT_TOKEN); // Log in to Discord using the bot token
 }
 
+// Execute the main function to start the bot
 main(client);

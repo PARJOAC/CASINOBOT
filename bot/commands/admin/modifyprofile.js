@@ -1,9 +1,11 @@
+// Import required modules from discord.js and custom functions
 const { SlashCommandBuilder, PermissionFlagsBits } = require("discord.js");
 const { getDataUser } = require("../../functions/getDataUser");
 const { redEmbed, greenEmbed } = require("../../functions/interactionEmbed");
 const { userCanUseCommand } = require("../../functions/checkAdminCommand");
 
 module.exports = {
+  // Define the slash command using SlashCommandBuilder
   data: new SlashCommandBuilder()
     .setName("modifyprofile")
     .setDescription("Modify a player's profile")
@@ -39,13 +41,18 @@ module.exports = {
   commandId: "1326153610614018078",
   category: "admin",
   admin: false,
+
+  // Execute function for the slash command
   async execute(interaction, client, lang) {
+    // Check if the user can use this command
     const check = await userCanUseCommand(interaction, lang, client);
     if (check.status) return;
 
+    // Get the target user and their data
     const user = interaction.options.getUser("user");
     const userData = await getDataUser(user.id, interaction.guild.id);
 
+    // Get new values from options or use existing values
     const balance = interaction.options.getInteger("balance") || userData.balance;
     const level = interaction.options.getInteger("level") || userData.level;
     const balloons = interaction.options.getInteger("balloons") || userData.swag.balloons;
@@ -53,6 +60,7 @@ module.exports = {
     const bikes = interaction.options.getInteger("bikes") || userData.swag.bike;
     let multiplier = interaction.options.getNumber("multiplier") || userData.votes;
 
+    // Check if any changes were made
     if (
       balance === userData.balance &&
       level === userData.level &&
@@ -68,6 +76,7 @@ module.exports = {
       ephemeral: false
     });
 
+    // Check for negative values
     if (balance < 0 || level < 0 || balloons < 0 || mobiles < 0 || bikes < 0 || multiplier < 0)
       return redEmbed(interaction, client, {
         type: "editReply",
@@ -77,8 +86,10 @@ module.exports = {
         ephemeral: false
       });
 
+    // Round multiplier to 2 decimal places if it's a positive number
     if (multiplier && multiplier >= 0) multiplier = multiplier.toFixed(2);
 
+    // Update user data
     userData.balance = balance;
     userData.level = level;
     userData.swag.balloons = balloons;
@@ -87,6 +98,7 @@ module.exports = {
     userData.votes = multiplier;
     await userData.save();
 
+    // Send success message with updated profile information
     return greenEmbed(interaction, client, {
       type: "editReply",
       title: lang.succesfulTitle,
@@ -102,6 +114,5 @@ module.exports = {
       footer: client.user.username,
       ephemeral: false
     });
-
   },
 };

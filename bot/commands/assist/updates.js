@@ -2,16 +2,21 @@ const { SlashCommandBuilder } = require("discord.js");
 const { blueEmbed } = require("../../functions/interactionEmbed");
 
 module.exports = {
+    // Define the slash command using SlashCommandBuilder
     data: new SlashCommandBuilder()
         .setName("updates")
         .setDescription("See the latest update of the bot (english only)"),
     category: "assist",
     commandId: "1307993499874099242",
+
+    // Execute function for the slash command
     async execute(interaction, client) {
+        // Use blueEmbed function to create and send an embed message
         return blueEmbed(interaction, client, {
             type: "editReply",
             title: "Version 2.4.1 released! 12/01/2025 (DD/MM/YYYY)",
             description: `Thank you for gambling with <@${client.user.id}>!\nThis version includes the following:\n`,
+            // Define fields for the embed, each representing a section of the update
             fields: [
                 {
                     name: "🐛 Bug Fixes",
@@ -37,6 +42,5 @@ module.exports = {
             footer: client.user.username,
             ephemeral: false
         });
-
     },
 };
