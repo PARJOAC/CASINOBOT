@@ -8,7 +8,7 @@ module.exports = {
     const guildChannel = process.env.LOG_CHANNEL_GUILD_ADD
 
     if (guildChannel) {
-      return blueEmbed(process.env.LOG_CHANNEL_GUILD_ADD, client, {
+      return blueEmbed(guildChannel, client, {
         title: "New Server Added!",
         description: `The bot has been added to the server: ${guild.name}`,
         thumbnail: guild.iconURL({ dynamic: true }),

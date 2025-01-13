@@ -59,8 +59,6 @@ module.exports = {
         ephemeral: false
       });
 
-    const reason = interaction.options.getUser("reason");
-
     check.guildData.economyType ? await PlayerGuild.deleteOne({ userId: targetUser.id }) : await Player.deleteOne({ userId: targetUser.id });
 
     await greenEmbed(interaction, client, {
