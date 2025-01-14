@@ -42,7 +42,7 @@ async function calculatePricesWithVip(userId) {
     for (const [key, { price, description }] of Object.entries(basePrices)) {
         adjustedPrices[key] = {
             price: (price * discountMultiplier).toFixed(2), // Asegurarse de que sea número
-            description + "\n", // Propagar descripción
+            description, // Propagar descripción
         };
     }
 
