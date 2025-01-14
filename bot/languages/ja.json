@@ -6,7 +6,7 @@
   "buyVip": "30日間の割引を得るためにVIPを購入します。",
   "shopListTitle": "**価格と報酬のリスト：**\n",
   "purchaseInit": "購入保留中",
-  "purchaseInitContent": "あなたは {item} を購入することを選択しました\n\n[こちら]({url}) をクリックして、{price} € の支払いを完了してください。購入を完了するまでに15分の猶予があります。",
+  "purchaseInitContent": "あなたは {category} を購入することを選択しました\n\n[こちら]({url}) をクリックして、{price} € の支払いを完了してください。購入を完了するまでに15分の猶予があります。",
   "buyTimeExceptionContent": "10分が経過したため、購入はキャンセルされました。",
   "purchaseSuccess": "🛒 購入完了",
   "purchaseSuccessContent": "``{quantity} x {item}`` を {price} € で購入が成功しました！",

@@ -6,7 +6,7 @@
   "buyVip": "购买VIP以获得30天的折扣。",
   "shopListTitle": "**价格和奖励列表：**\n",
   "purchaseInit": "待处理购买",
-  "purchaseInitContent": "你选择购买 {item}\n\n点击 [这里]({url}) 完成 {price} € 的支付。你有15分钟时间完成购买。",
+  "purchaseInitContent": "你选择购买 {category}\n\n点击 [这里]({url}) 完成 {price} € 的支付。你有15分钟时间完成购买。",
   "buyTimeExceptionContent": "购买已取消，因为已经过去了10分钟。",
   "purchaseSuccess": "🛒 购买完成",
   "purchaseSuccessContent": "你购买的 ``{quantity} x {item}``，价格为 {price} €，已成功完成！",

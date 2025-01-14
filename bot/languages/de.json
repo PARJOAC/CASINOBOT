@@ -6,7 +6,7 @@
   "buyVip": "Kaufe VIP für 30 Tage Rabatte.",
   "shopListTitle": "**Preise und Belohnungen:**\n",
   "purchaseInit": "Ausstehender Kauf",
-  "purchaseInitContent": "Du hast {item} ausgewählt\n\nKlicke [hier]({url}), um deine Zahlung von {price} € abzuschließen. Du hast 15 Minuten, um den Kauf abzuschließen.",
+  "purchaseInitContent": "Du hast {category} ausgewählt\n\nKlicke [hier]({url}), um deine Zahlung von {price} € abzuschließen. Du hast 15 Minuten, um den Kauf abzuschließen.",
   "buyTimeExceptionContent": "Der Kauf wurde storniert, da bereits 10 Minuten vergangen sind.",
   "purchaseSuccess": "🛒 Kauf Abgeschlossen",
   "purchaseSuccessContent": "Dein Kauf von ``{quantity} x {item}`` für {price} € wurde erfolgreich abgeschlossen!",

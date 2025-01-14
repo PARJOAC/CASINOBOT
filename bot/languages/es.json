@@ -6,7 +6,7 @@
   "buyVip": "Comprar VIP para obtener descuentos por 30 días.",
   "shopListTitle": "**Lista de Precios y Recompensas:**\n",
   "purchaseInit": "Compra Pendiente",
-  "purchaseInitContent": "Has seleccionado comprar {item}\n\nHaz clic [aquí]({url}) para completar tu pago de {price} €. Tienes 15 minutos para completar la compra.",
+  "purchaseInitContent": "Has seleccionado comprar {category}\n\nHaz clic [aquí]({url}) para completar tu pago de {price} €. Tienes 15 minutos para completar la compra.",
   "buyTimeExceptionContent": "Se ha cancelado la compra porque ya han pasado 10 minutos.",
   "purchaseSuccess": "🛒 Compra Completada",
   "purchaseSuccessContent": "¡Has comprado ``{quantity} x {item}`` por {price} € ha sido completada con éxito!",
