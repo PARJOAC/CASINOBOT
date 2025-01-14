@@ -1,4 +1,5 @@
 {
+  "onlyBotGlobal": "Solo puedes ejecutar este comando con la economía en modo global.",
   "buyMultiplier": "Añade {multiplier} a tu multiplicador de ganancias.",
   "buyCoins": "Obtén {coins} monedas instantáneamente.",
   "buyLevel": "Sube {level} niveles instantáneamente.",

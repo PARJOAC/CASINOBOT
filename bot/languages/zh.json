@@ -1,4 +1,5 @@
 {
+  "onlyBotGlobal": "您只能在经济处于全球模式时执行此命令。",
   "buyMultiplier": "将 {multiplier} 添加到你的收益倍数。",
   "buyCoins": "立即获得 {coins} 个硬币。",
   "buyLevel": "立即提升 {level} 级。",

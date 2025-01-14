@@ -1,4 +1,5 @@
 {
+  "onlyBotGlobal": "経済がグローバルモードのときにのみ、このコマンドを実行できます。",
   "buyMultiplier": "{multiplier} をあなたの獲得倍率に追加します。",
   "buyCoins": "すぐに {coins} コインを取得します。",
   "buyLevel": "即座に {level} レベルアップします。",

@@ -2,11 +2,11 @@ const { SlashCommandBuilder } = require("discord.js");
 const { redEmbed, greenEmbed } = require("../../functions/interactionEmbed");
 const { addSet, delSet, getSet } = require("../../functions/getSet");
 const paypal = require("@paypal/checkout-server-sdk");
-const { userCanUseCommand } = require("../../functions/checkAdminCommand");
 
+const Guild = require("../../../mongoDB/Guild");
 const PlayerBoost = require("../../../mongoDB/PlayerBoost");
 
-const environment = new paypal.core.SandboxEnvironment(
+const environment = new paypal.core.LiveEnvironment(
     process.env.PAYPAL_CLIENT_ID,
     process.env.PAYPAL_CLIENT_SECRET
 );
@@ -44,9 +44,14 @@ module.exports = {
     commandId: "1296240894214934532",
 
     async execute(interaction, client, lang, playerData) {
-        // Check if the user can use this command
-        const check = await userCanUseCommand(interaction, lang, client);
-        if (check.status) return;
+        const guildData = await Guild.findOne({ guildId: interaction.guild.id });
+        if (guildData.economyType) return redEmbed(interaction, client, {
+            type: "editReply",
+            title: lang.errorTitle,
+            description: lang.onlyBotGlobal,
+            footer: client.user.username,
+            ephemeral: false
+        });
 
         const executing = await getSet(interaction, lang, client);
         if (executing) return;
@@ -96,7 +101,7 @@ module.exports = {
         // Si no se selecciona un ítem, mostrar la lista de precios y recompensas
         if (!item) {
             await delSet(interaction.user.id);
-            let descriptionList;
+            let descriptionList = "";
             for (const [key, { price, description }] of Object.entries(prices)) {
                 descriptionList += `• **${key.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase())}**: ${price}€ - ${description}\n\n`;
             }
@@ -105,6 +110,7 @@ module.exports = {
                 type: "editReply",
                 title: lang.buyItemTitle,
                 description: descriptionList,
+                thumbnail: client.user.displayAvatarURL(),
                 footer: client.user.username,
                 ephemeral: true,
             });
@@ -118,7 +124,6 @@ module.exports = {
                 type: "editReply",
                 title: lang.errorTitle,
                 description: lang.negativeItem,
-                thumbnail: client.user.displayAvatarURL(),
                 footer: client.user.username,
                 ephemeral: true,
             });
@@ -254,6 +259,7 @@ module.exports = {
                             type: "editReply",
                             title: lang.purchaseSuccess,
                             description: lang.purchaseSuccessContent.replace("{quantity}", quantity).replace("{item}", item.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase())).replace("{price}", totalPrice),
+                            thumbnail: client.user.displayAvatarURL(),
                             footer: client.user.username,
                             ephemeral: true,
                         });

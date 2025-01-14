@@ -5,8 +5,6 @@ const PlayerBoostSchema = new mongoose.Schema({
     userId: { type: String, required: true, unique: true },
     isVip: { type: Boolean, default: false },
     vipExpiration: { type: Date, default: null },
-    multiplier: { type: Number, default: 1 },
-    boosts: { type: Map, of: Number, default: {} },
 });
 
 PlayerBoostSchema.methods.isVipActive = function() {
