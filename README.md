@@ -57,6 +57,7 @@ LOG_CHANNEL_GUILD_DELETE=log_channel_guild_delete_id
 VOICE_CHANNEL_MUSIC=voice_channel_music_id
 MAINTENANCE_CHANNEL_ID=maintenance_channel_id
 SUGGEST_CHANNEL_ID=suggestions_channel_id
+SHOP_CHANNEL_ID=shop_channel_id
 
 #LOGS
 LOCAL_LOG_GAMES_CHANNEL_ID=local_log_games_channel_id
@@ -85,7 +86,7 @@ TOPGG_API_TOKEN=your_topgg_api_token
 - **OWNER_ID**: Copy your Discord user ID.
 - **XP_LEVEL**: Choose a value for the XP level. This value will be used to determine when a user reaches the next level.
 - **MONGODB**: Create a database in [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) or use a local instance. Copy the connection URI provided by MongoDB.
-- **LOG_CHANNEL_GUILD_ADD**, **LOG_CHANNEL_GUILD_DELETE**, **LOCAL_LOG_GAMES_CHANNEL_ID**, **LOCAL_LOG_VOTES_CHANNEL_ID**, **LOCAL_LOG_COMMANDS_CHANNEL_ID**, **GLOBAL_LOG_COMMANDS_CHANNEL_ID**, **GLOBAL_LOG_VOTES_CHANNEL_ID**, **GLOBAL_LOG_GAMES_CHANNEL_ID**, **VOICE_CHANNEL_MUSIC**, **MAINTENANCE_CHANNEL_ID**, **SUGGEST_CHANNEL_ID**: In Discord, right-click on the desired channel and select "Copy ID".
+- **LOG_CHANNEL_GUILD_ADD**, **LOG_CHANNEL_GUILD_DELETE**, **LOCAL_LOG_GAMES_CHANNEL_ID**, **LOCAL_LOG_VOTES_CHANNEL_ID**, **LOCAL_LOG_COMMANDS_CHANNEL_ID**, **GLOBAL_LOG_COMMANDS_CHANNEL_ID**, **GLOBAL_LOG_VOTES_CHANNEL_ID**, **GLOBAL_LOG_GAMES_CHANNEL_ID**, **VOICE_CHANNEL_MUSIC**, **MAINTENANCE_CHANNEL_ID**, **SUGGEST_CHANNEL_ID**, **SHOP_CHANNEL_ID**: In Discord, right-click on the desired channel and select "Copy ID".
 - **RED_COLOR**, **GREEN_COLOR**, **BLUE_COLOR**, **YELLOW_COLOR**: These are color codes in hexadecimal format. You can find them using online color pickers.
 - **TOPGG_API_TOKEN**: If you plan to use integrations with [top.gg](https://top.gg/), register and generate an API token in your user dashboard.
 
