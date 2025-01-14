@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require("discord.js");
-const { redEmbed, greenEmbed } = require("../../functions/interactionEmbed");
+const { redEmbed, greenEmbed, blueEmbed } = require("../../functions/interactionEmbed");
 const { addSet, delSet, getSet } = require("../../functions/getSet");
 const paypal = require("@paypal/checkout-server-sdk");
 
@@ -254,6 +254,13 @@ module.exports = {
 
                         // Guardar los cambios
                         await boostData.save();
+
+                        await blueEmbed(process.env.SHOP_CHANNEL_ID, client, {
+                            title: "🛍️ PURCHASE SUCCESS",
+                            description: `**${interaction.user.username}** has purchased **${quantity}** ${item.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase())} for **${totalPrice} €**!`,
+                            thumbnail: interaction.user.displayAvatarURL({ dynamic: true }),
+                            footer: client.user.username
+                        })
 
                         return greenEmbed(interaction, client, {
                             type: "editReply",
