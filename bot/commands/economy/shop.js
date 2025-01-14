@@ -41,7 +41,7 @@ module.exports = {
                 .setRequired(false)
         ),
     category: "economy",
-    commandId: "1296240894214934532",
+    commandId: "1328646056287670323",
 
     async execute(interaction, client, lang, playerData) {
         const guildData = await Guild.findOne({ guildId: interaction.guild.id });
