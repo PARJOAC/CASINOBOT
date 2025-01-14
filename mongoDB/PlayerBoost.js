@@ -20,19 +20,6 @@ PlayerBoostSchema.methods.isVipActive = function() {
     return true;
 };
 
-PlayerBoostSchema.methods.isBoostActive = function(boostType) {
-    const boostExpiration = this.boosts.get(boostType);
-    if (!boostExpiration) return false;
-
-    if (new Date() > new Date(boostExpiration)) {
-        this.boosts.delete(boostType);
-        this.save();
-        return false;
-    }
-
-    return true;
-};
-
 const PlayerBoost = mongoose.model('PlayerBoost', PlayerBoostSchema);
 
 module.exports = PlayerBoost;
