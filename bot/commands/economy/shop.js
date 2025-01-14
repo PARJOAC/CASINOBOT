@@ -42,7 +42,7 @@ async function calculatePricesWithVip(userId) {
     for (const [key, { price, description }] of Object.entries(basePrices)) {
         adjustedPrices[key] = {
             price: (price * discountMultiplier).toFixed(2), // Asegurarse de que sea número
-            description, // Propagar descripción
+            description + "\n", // Propagar descripción
         };
     }
 
@@ -231,6 +231,20 @@ module.exports = {
                             // Se pueden agregar más tipos de XP Boost si es necesario
 
                             boostData.boosts.set(item, xpMultiplierExpiration);
+                        }
+                        
+                        if (item.includes("coins")) {
+                            if (item === "coins_30k") playerData.balance += 30000;
+                            else if (item === "coins_100k") playerData.balance += 100000;
+                            else if (item === "coins_500k") playerData.balance += 500000;
+                            await playerData.save();
+                        }
+                        
+                        if (item.includes("levelup")) {
+                            if (item === "levelup10") playerData.level += 10;
+                            else if (item === "levelup20") playerData.level += 20;
+                            else if (item === "levelup50") playerData.level += 50;
+                            await playerData.save();
                         }
 
                         // Guardar la compra del VIP
