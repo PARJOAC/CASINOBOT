@@ -329,6 +329,10 @@
     "setcommand": {
       "name": "setcommand",
       "description": "⚙️ 添加/移除服务器命令"
+    },
+    "shop": {
+      "name": "shop",
+      "description": "<:paypal:1328783868781658203> 购买升级版，成为最好的！"
     }
   },
   "categories": {

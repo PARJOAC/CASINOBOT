@@ -329,6 +329,10 @@
     "setcommand": {
       "name": "setcommand",
       "description": "⚙️ Befehl zum Server hinzufügen/entfernen"
+    },
+    "shop": {
+      "name": "shop",
+      "description": "<:paypal:1328783868781658203> Kaufen Sie Upgrades, um der Beste zu sein!"
     }
   },
   "categories": {

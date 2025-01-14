@@ -329,6 +329,10 @@
     "setcommand": {
       "name": "setcommand",
       "description": "⚙️ Adicionar/Remover comando no servidor"
+    },
+    "shop": {
+      "name": "shop",
+      "description": "<:paypal:1328783868781658203> Compre atualizações para ser o melhor!"
     }
   },
   "categories": {

@@ -329,6 +329,10 @@
     "setcommand": {
       "name": "setcommand",
       "description": "⚙️ सर्वर पर कमांड जोड़ें/हटाएं"
+    },
+    "shop": {
+      "name": "shop",
+      "description": "<:paypal:1328783868781658203> सर्वश्रेष्ठ बनने के लिए अपग्रेड खरीदें!"
     }
   },
   "categories": {

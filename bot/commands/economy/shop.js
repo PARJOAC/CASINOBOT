@@ -15,7 +15,7 @@ const paypalClient = new paypal.core.PayPalHttpClient(environment);
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("shop")
-        .setDescription("Buy via PayPal items to use in CasinoBot")
+        .setDescription("Buy upgrades to be the best!")
         .addStringOption((option) =>
             option
                 .setName("catalogue")

@@ -329,6 +329,10 @@
     "setcommand": {
       "name": "setcommand",
       "description": "⚙️ Ajouter/Retirer une commande sur le serveur"
+    },
+    "shop": {
+      "name": "shop",
+      "description": "<:paypal:1328783868781658203> Achetez des mises à niveau pour être le meilleur !"
     }
   },
   "categories": {

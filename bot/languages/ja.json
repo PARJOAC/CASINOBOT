@@ -329,6 +329,10 @@
     "setcommand": {
       "name": "setcommand",
       "description": "⚙️ サーバーでコマンドを追加/削除"
+    },
+    "shop": {
+      "name": "shop",
+      "description": "<:paypal:1328783868781658203> 最高になるためにアップグレードを購入してください!"
     }
   },
   "categories": {

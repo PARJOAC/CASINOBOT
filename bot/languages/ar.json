@@ -325,6 +325,10 @@
     "setcommand": {
       "name": "setcommand",
       "description": "⚙️ إضافة/إزالة الأمر من الخادم"
+    },
+    "shop": {
+      "name": "shop",
+      "description": "<:paypal:1328783868781658203> شراء ترقيات ليكون الأفضل!"
     }
   },
   "categories": {
