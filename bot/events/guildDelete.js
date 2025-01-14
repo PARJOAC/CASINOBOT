@@ -1,14 +1,14 @@
 const { Events } = require("discord.js");
-const { blueEmbed } = require("../functions/interactionEmbed");
+const { redEmbed } = require("../functions/interactionEmbed");
 
 module.exports = {
   name: Events.GuildDelete,
   async execute(guild, client) {
     if (!guild) return;
-    const guildChannel = process.env.LOG_CHANNEL_GUILD_ADD;
+    const guildChannel = process.env.LOG_CHANNEL_GUILD_DELETE;
 
     if (guildChannel) {
-      return blueEmbed(process.env.LOG_CHANNEL_GUILD_ADD, client, {
+      return redEmbed(guildChannel, client, {
         title: "Bot Removed from a Server",
         description: `The bot has been removed from the server: ${guild.name}`,
         thumbnail: guild.iconURL({ dynamic: true }),

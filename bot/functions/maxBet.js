@@ -17,20 +17,29 @@ async function maxBet(playerData, betAmount, lang, interaction, client) {
     { level: 75, maxBet: 100000 }
   ];
 
-  for (const { level, maxBet } of levelLimits) {
-    if (playerData.level <= level && betAmount > maxBet) {
-      await embedMessage(
-        lang.errorMaxBetContent
-          .replace("{level}", playerData.level)
-          .replace("{number}", maxBet)
-      );
-      return true;
-    };
-  };
+  let maxBetAllowed = 100000; // Límite predeterminado para niveles mayores a 75
 
+  for (const { level, maxBet } of levelLimits) {
+    if (playerData.level <= level) {
+      maxBetAllowed = maxBet;
+      break;
+    }
+  }
+
+  // Verificar si la apuesta excede el límite permitido
+  if (betAmount > maxBetAllowed) {
+    await embedMessage(
+      lang.errorMaxBetContent
+        .replace("{level}", playerData.level)
+        .replace("{number}", maxBetAllowed)
+    );
+    return true;
+  }
+
+  // Actualizar el valor máximo apostado si la apuesta es válida
   if (playerData.maxBet < betAmount) {
     playerData.maxBet = betAmount;
-  };
+  }
 
   return false;
 };

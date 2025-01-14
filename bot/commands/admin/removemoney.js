@@ -110,7 +110,7 @@ module.exports = {
 
       // Create an embed to send to the target user
       const embed = new EmbedBuilder()
-        .setColor(parseInt(process.env.GREEN_COLOR))
+        .setColor(parseInt(process.env.GREEN_COLOR, 16))
         .setTitle(lang.userRemoveMoneyNotifyTitle)
         .setDescription(lang.userRemoveMoneyNotifyContent.replace("{user}", interaction.user.username).replace("{amount}", amount.toLocaleString()))
         .addFields(

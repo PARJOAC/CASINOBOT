@@ -69,7 +69,6 @@ module.exports = {
         ephemeral: false
       });
 
-    // Delete the player from the database based on the economy type
     check.guildData.economyType ? await PlayerGuild.deleteOne({ userId: targetUser.id }) : await Player.deleteOne({ userId: targetUser.id });
 
     // Send a success message to the command user
@@ -87,7 +86,7 @@ module.exports = {
 
       // Create an embed to send to the deleted user
       const embed = new EmbedBuilder()
-        .setColor(parseInt(process.env.GREEN_COLOR))
+        .setColor(parseInt(process.env.GREEN_COLOR, 16))
         .setTitle(lang.userDeletedNotifyTitle)
         .setDescription(lang.userDeletedNotifyContent.replace("{user}", interaction.user.username))
         .addFields(
