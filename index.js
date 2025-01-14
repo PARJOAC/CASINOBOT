@@ -34,6 +34,7 @@ const Errors = require("./initMain/handlerErrors.js");
 const MongoDB = require("./initMain/mongoDB.js");
 const Events = require("./initMain/handlerEvents.js");
 const SlashCommands = require("./initMain/handlerSlashCommands.js");
+const PayPalClient = require("./initMain/initPayPalClient.js");
 
 /**
  * Main function to initialize and start the bot
@@ -44,6 +45,7 @@ async function main(client) {
     await MongoDB(); // Connect to MongoDB
     await SlashCommands(client); // Set up slash commands
     await Events(client); // Set up event handlers
+    await PayPalClient(); // Initialize PayPal client
     await client.login(process.env.BOT_TOKEN); // Log in to Discord using the bot token
 }
 
