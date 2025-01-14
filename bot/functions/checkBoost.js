@@ -5,19 +5,21 @@ async function checkVipStatus(userId) {
     const player = await PlayerBoost.findOne({ userId: userId });
 
     if (player && player.isVipActive()) {
-        console.log('El jugador sigue siendo VIP');
+        return true
     } else {
-        console.log('El jugador ya no es VIP o no lo ha sido');
+        return false;
     }
 }
 
 // Comprobar si un boost sigue activo
-async function checkBoostStatus(userId, boostType) {
+async function checkBoostStatus(userId) {
     const player = await PlayerBoost.findOne({ userId: userId });
 
     if (player && player.isBoostActive(boostType)) {
-        console.log(`${boostType} sigue activo`);
+        return true;
     } else {
-        console.log(`${boostType} ya no está activo`);
+        return false;
     }
 }
+
+module.exports = { checkVipStatus, checkBoostStatus };

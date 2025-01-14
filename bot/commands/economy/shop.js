@@ -11,21 +11,43 @@ const environment = new paypal.core.SandboxEnvironment(
 );
 const paypalClient = new paypal.core.PayPalHttpClient(environment);
 
-// Precios ajustados
-const prices = {
-    "boostx2_30min": 3.99,
-    "boostx5_1h": 3.99,
-    "coins_30k": 4.99,
-    "coins_100k": 12.99,
-    "coins_500k": 59.99,
-    "vip_30d": 9.99,
-    "xpx2_1h": 2.49,
-    "xpx5_3h": 4.99,
-    "xpx10_24h": 8.99,
-    "lvlup10": 3.99,
-    "lvlup20": 6.99,
-    "lvlup50": 8.99,
+// Precios base
+const basePrices = {
+    "boostx2_30min": { price: 3.99, description: "Multiplica x2 tus ganancias por 30 minutos." },
+    "boostx5_1h": { price: 3.99, description: "Multiplica x5 tus ganancias por 1 hora." },
+    "coins_30k": { price: 4.99, description: "Obtén 30,000 monedas instantáneamente." },
+    "coins_100k": { price: 12.99, description: "Obtén 100,000 monedas instantáneamente." },
+    "coins_500k": { price: 59.99, description: "Obtén 500,000 monedas instantáneamente." },
+    "vip_30d": { price: 9.99, description: "Ventajas VIP por 30 días." },
+    "xpx2_1h": { price: 2.49, description: "Multiplica x2 tu experiencia por 1 hora." },
+    "xpx5_3h": { price: 4.99, description: "Multiplica x5 tu experiencia por 3 horas." },
+    "xpx10_24h": { price: 8.99, description: "Multiplica x10 tu experiencia por 24 horas." },
+    "lvlup10": { price: 3.99, description: "Sube 10 niveles instantáneamente." },
+    "lvlup20": { price: 6.99, description: "Sube 20 niveles instantáneamente." },
+    "lvlup50": { price: 8.99, description: "Sube 50 niveles instantáneamente." },
 };
+
+// Función para calcular precios ajustados
+async function calculatePricesWithVip(userId) {
+    const player = await PlayerBoost.findOne({ userId });
+
+    // Determinar si el jugador es VIP
+    const isVip = player && player.isVipActive();
+
+    // Aplicar descuento del 20% si es VIP
+    const discountMultiplier = isVip ? 0.8 : 1;
+
+    // Calcular precios ajustados
+    const adjustedPrices = {};
+    for (const [key, { price, description }] of Object.entries(basePrices)) {
+        adjustedPrices[key] = {
+            price: (price * discountMultiplier).toFixed(2), // Asegurarse de que sea número
+            description, // Propagar descripción
+        };
+    }
+
+    return adjustedPrices;
+}
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -35,7 +57,7 @@ module.exports = {
             option
                 .setName("catalogue")
                 .setDescription("Select the item you want to buy")
-                .setRequired(true)
+                .setRequired(false)
                 .addChoices(
                     { name: "Boost x2 (30 minutes)", value: "boostx2_30min" },
                     { name: "Boost x5 (1 hour)", value: "boostx5_1h" },
@@ -53,7 +75,7 @@ module.exports = {
             option
                 .setName("quantity")
                 .setDescription("Amount of items to buy")
-                .setRequired(true)
+                .setRequired(false)
         ),
     category: "economy",
     commandId: "1296240894214934532",
@@ -65,7 +87,26 @@ module.exports = {
         await addSet(interaction.user.id);
 
         const item = interaction.options.getString("catalogue");
-        const quantity = interaction.options.getInteger("quantity");
+        // Calcular el precio total
+        const prices = await calculatePricesWithVip(interaction.user.id);
+
+        // Si no se selecciona un ítem, mostrar la lista de precios y recompensas
+        if (!item) {
+            let priceList = "**Lista de Precios y Recompensas:**\n";
+            for (const [key, { price, description }] of Object.entries(prices)) {
+                priceList += `• **${key.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase())}**: €${price} - ${description}\n`;
+            }
+
+            return greenEmbed(interaction, client, {
+                type: "editReply",
+                title: "Tienda de CasinoBot",
+                description: priceList,
+                footer: client.user.username,
+                ephemeral: true,
+            });
+        }
+        
+        const quantity = interaction.options.getInteger("quantity") || 1;
 
         if (quantity <= 0) {
             await delSet(interaction.user.id);
@@ -78,7 +119,7 @@ module.exports = {
             });
         }
 
-        // Calcular el precio total
+        // Verificar si el producto existe
         const price = prices[item];
         if (!price) {
             await delSet(interaction.user.id);
